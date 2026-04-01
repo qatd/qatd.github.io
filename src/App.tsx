@@ -1,12 +1,9 @@
-import { Suspense } from "react"
 import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Header from "./components/header/Header"
-import { ErrorBoundary } from "react-error-boundary"
 import { AnimatePresence } from "framer-motion"
 import Footer from "./components/bottomSection/Footer"
 import PageComponent from "./pages/PageComponent"
-import FallbackError from "./components/fallbackComponents/FallbackError"
-import FallbackLoading from "./components/fallbackComponents/FallbackLoading"
+import ErrorSuspenseWrapper from "./components/fallbackComponents/ErrorSuspenseWrapper"
 import { useMediaQuery } from "react-responsive"
 import { screen_mobile } from "./utils/responsiveUtils"
 import styled from "styled-components"
@@ -53,13 +50,11 @@ const App = () => {
                                 key={id}
                                 path={id}
                                 element={
-                                    <ErrorBoundary fallback={<FallbackError/>}>
-                                        <Suspense fallback={<FallbackLoading/>}>
-                                            <PageComponent title={pageTitle}>
-                                                <Page/>
-                                            </PageComponent>
-                                        </Suspense>
-                                    </ErrorBoundary>
+                                    <ErrorSuspenseWrapper>
+                                        <PageComponent title={pageTitle}>
+                                            <Page/>
+                                        </PageComponent>
+                                    </ErrorSuspenseWrapper>
                                 }
                             />
                         )

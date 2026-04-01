@@ -9,13 +9,11 @@ interface ErrorSuspenseWrapperProps {
 
 const ErrorSuspenseWrapper:React.FC<ErrorSuspenseWrapperProps> = ({children}) => {
     return (
-        // <div>
-            <ErrorBoundary fallback={<FallbackError/>}>
-                <Suspense fallback={<FallbackLoading/>}>
-                    {children}
-                </Suspense>
-            </ErrorBoundary>
-        // </div>
+        <ErrorBoundary fallback={<FallbackError/>}>
+            <Suspense fallback={<FallbackLoading/>}>
+                {children}
+            </Suspense>
+        </ErrorBoundary>
     )
 }
 
