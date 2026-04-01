@@ -11,6 +11,7 @@ import { useMediaQuery } from "react-responsive"
 import { screen_mobile } from "./utils/responsiveUtils"
 import styled from "styled-components"
 import { useLanguage } from "./contexts/useLanguage"
+import { GlobalStyle } from "./style/globalRules"
 import { ROUTES } from "./routes/routeConfig"
 
 const StyleContainer = styled.div`
@@ -36,6 +37,7 @@ const App = () => {
 
     return (
         <StyleContainer className={`app ${isOnMobileScreen ? 'app-mobile' : ''}`}>
+            <GlobalStyle />
             
             <Header/>
             
