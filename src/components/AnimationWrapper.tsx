@@ -1,4 +1,4 @@
-import { motion, Variants } from "framer-motion"
+import { motion, Spring, Tween, Variants } from "framer-motion"
 import { zoomEffect } from "../style/animations/animations"
 import { FC } from "react"
 
@@ -8,7 +8,7 @@ interface AnimationWrapperProps {
     transitionDuration?:number
     className?:string
     layout?:boolean
-    layoutTransition?:any
+    layoutTransition?:Tween | Spring
 }
 
 const AnimationWrapper: FC<AnimationWrapperProps> = ({transitionDuration, animationType, children, className, layout, layoutTransition}) => {
