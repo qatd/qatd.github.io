@@ -54,7 +54,7 @@ export const bounce: Variants = {
     initial:{ 
         // backdropFilter:'blur(0rem)',
         // opacity: 0, 
-        scale: 0.9,
+        scale: 0.97,
     },
     animate:{ 
         // backdropFilter:'blur(5rem)',
@@ -63,7 +63,7 @@ export const bounce: Variants = {
     },
     exit:{ 
         // backdropFilter:'blur(0rem)',
-        scale: 0.95,
+        scale: 0.97,
         opacity:0,
     }
 }

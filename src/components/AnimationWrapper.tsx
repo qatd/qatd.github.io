@@ -15,19 +15,19 @@ const AnimationWrapper: FC<AnimationWrapperProps> = ({transitionDuration, animat
 
     return (
         <motion.div
-            variants={animationType ? animationType : zoomEffect}
+            variants={animationType ?? zoomEffect}
             initial='initial'
             animate='animate'
             exit='exit'
             transition={{
-                duration:transitionDuration ? transitionDuration : .3,
+                duration:transitionDuration ?? .2,
                 ease:'easeInOut',
-                layout:layout ? (layoutTransition ?? {type:'tween', duration:0.5,ease:'easeInOut'}) : undefined
+                layout:layout ? (layoutTransition ?? {type:'tween',ease:'easeInOut'}) : undefined
             }}
-            className={`animationWrapper ${className}`}
+            className={`animationWrapper ${className ? ` ${className}` : ''}`}
             layout={layout}
         >
-            {children && children}
+            {children}
         </motion.div>
     )
 }

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { PostMediasInterface } from "../interfaces/postsInterfaces"
 import ButtonWithIcon from "./ButtonWithIcon"
-import ReactDOM from 'react-dom'
+import { createPortal } from 'react-dom'
 import AnimationWrapper from "./AnimationWrapper"
 import { bounce, progressiveShowUp, zoomEffect2 } from "../style/animations/animations"
 import styled from "styled-components"
@@ -81,11 +81,12 @@ const ImageWrapper:React.FC<ImageWrapperProps> = ({pathHdImage, imageDescription
 
     // Preload the image for smooth loading
     useEffect(() => {
-        if (pathHdImage) {
-            const img = new Image()
-            img.onload = () => setImageLoaded(true)
-            img.src = pathHdImage
-        }
+        if (!pathHdImage) return
+        let cancelled = false
+        const img = new Image()
+        img.onload = () => { if (!cancelled) setImageLoaded(true) }
+        img.src = pathHdImage
+        return () => { cancelled = true }
     }, [pathHdImage])
 
     // listening if the escape key is pressed when imageWrapper is loaded
@@ -114,14 +115,14 @@ const ImageWrapper:React.FC<ImageWrapperProps> = ({pathHdImage, imageDescription
         }
     }, [])
 
-    return ReactDOM.createPortal(
+    return createPortal(
         <Style>
             <AnimationWrapper transitionDuration={.3} className="imageWrapper" animationType={progressiveShowUp}>
                 
                 <div className="imageWrapper-background" onClick={closingImageWrapper}></div>
 
                 <motion.div 
-                    transition={{duration:.3, ease:'easeInOut'}} 
+                    transition={{duration:.25, ease:'easeInOut'}} 
                     className="imageWrapper-closingButton" 
                     variants={zoomEffect2} 
                     initial='initial' 
@@ -133,8 +134,8 @@ const ImageWrapper:React.FC<ImageWrapperProps> = ({pathHdImage, imageDescription
                 </motion.div>
 
                 {imageLoaded && (
-                    <motion.div 
-                        transition={{duration:.3, ease:'easeInOut'}} 
+                    <motion.div
+                        transition={{duration:.25, ease:'easeInOut'}}
                         className="imageWrapper-items" 
                         variants={bounce} 
                         initial='initial' 
