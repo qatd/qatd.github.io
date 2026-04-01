@@ -52,14 +52,15 @@ const PostFilter: React.FC<PostFilterProps> = ({ projectPosts, setSelectedTags, 
 
     // Extract all unique tags from the projects posts
     // we don't get them from tags context, because then we would get tags that are not used in projects
-    const postsTagsIds = Array.from(
-        new Set(projectPosts.flatMap(post => post.tagsId?.map(tag => tag) || []))
+    const postsTagsIds = useMemo(
+        () => Array.from(new Set(projectPosts.flatMap(post => post.tagsId ?? []))),
+        [projectPosts]
     )
 
     // create the structure to group the tags by their category
     const tagsByCategory = useMemo(
         () => getTagsGroupedByCategory(postsTagsIds),
-        [postsTagsIds]
+        [postsTagsIds, getTagsGroupedByCategory]
     )
 
     // Handle tag selection toggling

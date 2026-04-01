@@ -1,7 +1,10 @@
 import { createContext, FC, ReactNode } from "react"
 import { PostInterface, PostsInterfaceWithLanguage } from "../interfaces/postsInterfaces"
-import posts from '../../public/assets/jsons/posts.json'
+import postsJson from '../../public/assets/jsons/posts.json'
 import { useLanguage } from "./useLanguage"
+
+// Cast the JSON import to the typed interface — TypeScript infers string literals as string otherwise
+const posts = postsJson as PostsInterfaceWithLanguage
 
 export interface PostContextType {
     posts: PostsInterfaceWithLanguage
