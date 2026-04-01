@@ -20,7 +20,7 @@ const StyleContainer = styled.div`
 const FallbackError = () => {
     return (
         <StyleContainer>
-            <p>An error occured...</p>
+            <p>An error occurred...</p>
         </StyleContainer>
     )
 }

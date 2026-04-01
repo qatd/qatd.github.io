@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components"
-import ButtonWithIcon from "../ButtonWithIcon"
 
 const popIn = keyframes`
     0% { opacity: 0; transform: scale(0.8); }
@@ -21,7 +20,7 @@ const StyleContainer = styled.div`
 const FallbackLoading = () => {
     return (
         <StyleContainer>
-            <ButtonWithIcon imageName="" text="loading..." />
+            <p>loading...</p>
         </StyleContainer>
     )
 }
