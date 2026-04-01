@@ -40,5 +40,6 @@ export const useCloseMenu = ({openingState, closing, ref, refsToExclude = []}:Us
 
         document.addEventListener('mousedown', handleClickOutside)
         return () => document.removeEventListener('mousedown', handleClickOutside)
-    }, [openingState,closing,ref])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [openingState, closing, ref, ...refsToExclude])
 }

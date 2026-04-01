@@ -1,11 +1,11 @@
 interface SvgIconProps {
-    icon:SVGElement
+    icon: SVGElement
 }
 
-const SvgIcon:React.FC<SvgIconProps> = ({}) => {
+const SvgIcon: React.FC<SvgIconProps> = () => {
     return (
         <div className="svgIcon">
-            
+
         </div>
     )
 }
