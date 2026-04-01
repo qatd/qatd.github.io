@@ -1,3 +1,5 @@
+import { RouteId } from '../routes/routeConfig'
+
 // export the whole interfaces above, starting with a language
 export interface AppTextInterfacesWithLanguage {
     fr: AppTextInterface
@@ -77,6 +79,6 @@ export interface SocialLinkInterface{
 }
 
 export interface PagesTextInterface {
-    id:string
+    id:RouteId
     text:string
 }

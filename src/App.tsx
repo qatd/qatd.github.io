@@ -11,6 +11,7 @@ import { useMediaQuery } from "react-responsive"
 import { screen_mobile } from "./utils/responsiveUtils"
 import styled from "styled-components"
 import { useLanguage } from "./contexts/useLanguage"
+import { ROUTES } from "./routes/routeConfig"
 
 const StyleContainer = styled.div`
     display: flex;
@@ -42,19 +43,25 @@ const App = () => {
 
                 <Routes location={location} key={location.pathname}>
 
-                    {appText.pages.map((pageItem) => (
-                        <Route 
-                            key={pageItem.id} 
-                            path={pageItem.id} 
-                            element={
-                                <ErrorBoundary fallback={<FallbackError/>}>
-                                    <Suspense fallback={<FallbackLoading/>}>
-                                        <PageComponent pageItem={pageItem}/>
-                                    </Suspense>
-                                </ErrorBoundary>
-                            }
-                        />
-                    ))}
+                    {ROUTES.map(({ id, component: Page }) => {
+                        // look up the translated page title from appText
+                        const pageTitle = appText.pages.find(p => p.id === id)?.text ?? id
+                        return (
+                            <Route
+                                key={id}
+                                path={id}
+                                element={
+                                    <ErrorBoundary fallback={<FallbackError/>}>
+                                        <Suspense fallback={<FallbackLoading/>}>
+                                            <PageComponent title={pageTitle}>
+                                                <Page/>
+                                            </PageComponent>
+                                        </Suspense>
+                                    </ErrorBoundary>
+                                }
+                            />
+                        )
+                    })}
 
                     {/* in case of a mistype in the url, this route below will redirect to the root / */}
                     <Route path="*" element={<Navigate to="/" replace />}/>
