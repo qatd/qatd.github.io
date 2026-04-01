@@ -65,12 +65,12 @@ interface PostMediasProps {
 
 const PostMedias:React.FC<PostMediasProps> = ({medias}) => {
 
-    if (!medias) return null
-
     const smallScreen = useMediaQuery({maxWidth:screen_tablet})
 
     // keeping track of the selected image, in order to show it up in the image wrapper
-    const [selectedImage, setSelectedImage] = useState<PostMediasInterface | null>(null);
+    const [selectedImage, setSelectedImage] = useState<PostMediasInterface | null>(null)
+
+    if (!medias) return null
 
     const openImageWrapper = (selectedImage:PostMediasInterface):void => {
         setSelectedImage(selectedImage)
