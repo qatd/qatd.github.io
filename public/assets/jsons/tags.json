@@ -42,7 +42,10 @@
         { "id": "tag_ts", "text": "Typescript", "category": "Software Development" },
         { "id": "tag_tailwind", "text": "Tailwind", "category": "React" },
         { "id": "tag_shadcn", "text": "Shadcn", "category": "React" },
-        { "id": "tag_betterauth", "text": "Better-Auth", "category": "React" }
+        { "id": "tag_betterauth", "text": "Better-Auth", "category": "React" },
+        { "id": "tag_claudeCode", "text": "Claude Code", "category": "Dev Tools" },
+        { "id": "tag_vercel", "text": "Vercel", "category": "Dev Tools" },
+        { "id": "tag_neon", "text": "Neon", "category": "Software Development" }
     ],
     "fr": [
         { "id": "tag_js", "text": "Javascript / Typescript", "category": "Développement" },
@@ -87,6 +90,9 @@
         { "id": "tag_ts", "text": "Typescript", "category": "Développement" },
         { "id": "tag_tailwind", "text": "Tailwind", "category": "React" },
         { "id": "tag_shadcn", "text": "Shadcn", "category": "React" },
-        { "id": "tag_betterauth", "text": "Better-Auth", "category": "React" }
+        { "id": "tag_betterauth", "text": "Better-Auth", "category": "React" },
+        { "id": "tag_claudeCode", "text": "Claude Code", "category": "Outils de dev" },
+        { "id": "tag_vercel", "text": "Vercel", "category": "Outils de dev" },
+        { "id": "tag_neon", "text": "Neon", "category": "Développement" }
     ]
 }

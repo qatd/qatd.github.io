@@ -10,26 +10,24 @@
                     "Here is an overview of my skills, that I update frequently:"
                 ],
                 "tagsId":[
-                    "tag_js",
+                    "tag_ts",
                     "tag_python",
                     "tag_react",
                     "tag_next",
                     "tag_node",
                     "tag_tailwind",
                     "tag_postgre",
-                    "tag_pytorch",
                     "tag_mongo",
                     "tag_git",
                     "tag_jupyterNotebook",
                     "tag_llmIntegration",
+                    "tag_claudeCode",
+                    "tag_ollama",
                     "tag_linux",
-                    "tag_debian",
                     "tag_proxmox",
                     "tag_figma",
                     "tag_notion",
-                    "tag_obsidian",
-                    "tag_cursor",
-                    "tag_ollama"
+                    "tag_obsidian"
                 ]
             }
         ],
@@ -85,7 +83,7 @@
                 "projectOrigin": "Personal project",
                 "title": "Kosmo Project",
                 "description": "An ideal social network for me. (In progress...)",
-                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma"],
+                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
                     "The idea behind this project was to create my ideal Twitter-like social network.",
                     "Since I felt frustrated by the absence of some features that are crucial to me in X/Twitter, I decided to channel that frustration into building something of my own.", 
@@ -293,26 +291,24 @@
                     "J'aime apprendre de nouvelles technologies et améliorer mes compétences."
                 ],
                 "tagsId":[
-                    "tag_js",
+                    "tag_ts",
                     "tag_python",
                     "tag_react",
                     "tag_next",
                     "tag_node",
                     "tag_tailwind",
                     "tag_postgre",
-                    "tag_pytorch",
                     "tag_mongo",
                     "tag_git",
                     "tag_jupyterNotebook",
                     "tag_llmIntegration",
+                    "tag_claudeCode",
+                    "tag_ollama",
                     "tag_linux",
-                    "tag_debian",
                     "tag_proxmox",
                     "tag_figma",
                     "tag_notion",
-                    "tag_obsidian",
-                    "tag_cursor",
-                    "tag_ollama"
+                    "tag_obsidian"
                 ]
             }
         ],
@@ -367,7 +363,7 @@
                 "projectOrigin": "Projet personnel",
                 "title": "Projet Kosmo",
                 "description": "Un réseau social idéal selon moi. (En cours...)",
-                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma"],
+                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
                     "L'idée derrière ce projet est un peu de créer mon réseau social idéal, type Twitter/X.",
                     "Il y a beaucoup de fonctions que j'aurais voulu voir arriver et qui me semblent importante dans X/Twitter, j'ai décidé de canaliser cette frustration en construisant quelque chose qui m'appartient.",
