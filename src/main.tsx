@@ -13,7 +13,7 @@ createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <ErrorBoundary fallback={<FallbackError/>}>
             <Suspense fallback={<FallbackLoading/>}>
-                <HashRouter>
+                <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
                     <LanguageProvider>
                         <PostProvider>
                             <TagsProvider>
