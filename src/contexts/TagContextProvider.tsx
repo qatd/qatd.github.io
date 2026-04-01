@@ -3,9 +3,30 @@ import { TagGroupedByCategory, TagInterface } from "../interfaces/postsInterface
 import tagsData from '../../public/assets/jsons/tags.json'
 import { useLanguage } from "./useLanguage"
 
-interface TagsInterfacesWithLanguage {
-    en: TagInterface[]
-    fr: TagInterface[]
+// Raw shape stored in tags.json
+interface TagRawData {
+    id: string
+    text_en: string
+    text_fr: string
+    category: string
+}
+
+// Translated display names for each category slug
+const categoryNames: Record<'en' | 'fr', Record<string, string>> = {
+    en: {
+        languages: "Languages",
+        frontend: "Frontend",
+        backend_data: "Backend & Data",
+        devops_tools: "DevOps & Tools",
+        project_type: "Project Type"
+    },
+    fr: {
+        languages: "Langages",
+        frontend: "Frontend",
+        backend_data: "Backend & Data",
+        devops_tools: "Outils & DevOps",
+        project_type: "Type de projet"
+    }
 }
 
 export interface TagsContextType {
@@ -19,7 +40,13 @@ const TagsContext = createContext<TagsContextType | undefined>(undefined)
 
 export const TagsProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { currentLanguage } = useLanguage()
-    const tags = (tagsData as TagsInterfacesWithLanguage)[currentLanguage]
+
+    // Map raw bilingual data to TagInterface for the current language
+    const tags: TagInterface[] = (tagsData as TagRawData[]).map(raw => ({
+        id: raw.id,
+        text: currentLanguage === 'fr' ? raw.text_fr : raw.text_en,
+        category: categoryNames[currentLanguage][raw.category] ?? raw.category
+    }))
 
     // return the tag that has the id given as parameter
     // if no match, return undefined
@@ -39,7 +66,7 @@ export const TagsProvider: FC<{ children: ReactNode }> = ({ children }) => {
         // checking whether the method groupBy exist in the browser context
         // (because groupBy is a ES2024 feature so it may not be compatible with all browsers)
         const hasGroupBy = typeof Object.groupBy === 'function'
-        
+
         // return an object with the category as string and then an array of the tags that belong to this category
         // if the browser don't support groupBy, return another way to achieve the same result
         const groupedTags: Partial<Record<string, TagInterface[]>> = hasGroupBy
@@ -48,8 +75,6 @@ export const TagsProvider: FC<{ children: ReactNode }> = ({ children }) => {
                 (acc[t.category] ||= []).push(t)
                 return acc
             },{} as Record<string,TagInterface[]>)
-        
-        // console.log('------ tag context getTagsGroupedByCategory ------',groupedTags)
 
         return Object.keys(groupedTags)
             // .sort().reverse()
