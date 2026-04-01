@@ -1,10 +1,6 @@
-import { createContext, FC, ReactNode } from "react"
+import { createContext, FC, ReactNode, useEffect, useState } from "react"
 import { PostInterface, PostsInterfaceWithLanguage } from "../interfaces/postsInterfaces"
-import postsJson from '../../public/assets/jsons/posts.json'
 import { useLanguage } from "./useLanguage"
-
-// Cast the JSON import to the typed interface — TypeScript infers string literals as string otherwise
-const posts = postsJson as PostsInterfaceWithLanguage
 
 export interface PostContextType {
     posts: PostsInterfaceWithLanguage
@@ -15,15 +11,19 @@ export interface PostContextType {
 const PostContext = createContext<PostContextType | undefined>(undefined)
 
 export const PostProvider: FC<{ children: ReactNode }> = ({ children }) => {
+    const { currentLanguage } = useLanguage()
+    const [posts, setPosts] = useState<PostsInterfaceWithLanguage | null>(null)
 
-    const {currentLanguage} = useLanguage()
+    useEffect(() => {
+        fetch(`${import.meta.env.BASE_URL}assets/jsons/posts.json`)
+            .then(res => res.json())
+            .then((data: PostsInterfaceWithLanguage) => setPosts(data))
+    }, [])
 
-    const getPresentationPost = () => {
-        return posts[currentLanguage].presentation
-    }
-    const getProjectPosts = () => {
-        return posts[currentLanguage].projects
-    }
+    if (!posts) return null
+
+    const getPresentationPost = () => posts[currentLanguage].presentation
+    const getProjectPosts = () => posts[currentLanguage].projects
 
     return (
         <PostContext.Provider value={{getPresentationPost, getProjectPosts, posts}}>

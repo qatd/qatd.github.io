@@ -1,6 +1,5 @@
-import { createContext, FC, ReactNode } from "react"
+import { createContext, FC, ReactNode, useEffect, useState } from "react"
 import { TagGroupedByCategory, TagInterface } from "../interfaces/postsInterfaces"
-import tagsData from '../../public/assets/jsons/tags.json'
 import { useLanguage } from "./useLanguage"
 
 // Raw shape stored in tags.json
@@ -40,9 +39,18 @@ const TagsContext = createContext<TagsContextType | undefined>(undefined)
 
 export const TagsProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const { currentLanguage } = useLanguage()
+    const [rawTags, setRawTags] = useState<TagRawData[] | null>(null)
+
+    useEffect(() => {
+        fetch(`${import.meta.env.BASE_URL}assets/jsons/tags.json`)
+            .then(res => res.json())
+            .then((data: TagRawData[]) => setRawTags(data))
+    }, [])
+
+    if (!rawTags) return null
 
     // Map raw bilingual data to TagInterface for the current language
-    const tags: TagInterface[] = (tagsData as TagRawData[]).map(raw => ({
+    const tags: TagInterface[] = rawTags.map(raw => ({
         id: raw.id,
         text: currentLanguage === 'fr' ? raw.text_fr : raw.text_en,
         category: categoryNames[currentLanguage][raw.category] ?? raw.category

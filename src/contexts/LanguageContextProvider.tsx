@@ -1,6 +1,5 @@
-import { createContext, FC, ReactNode, useState } from "react"
+import { createContext, FC, ReactNode, useEffect, useState } from "react"
 import { AppTextInterface, AppTextInterfacesWithLanguage } from "../interfaces/appTextInterfaces"
-import appText from '../../public/assets/jsons/appText.json'
 
 export interface LanguageContextType {
     currentLanguage: 'en' | 'fr'
@@ -19,10 +18,18 @@ const getBrowserLanguage = (): 'en' | 'fr' => {
 
 export const LanguageProvider: FC<{ children: ReactNode }> = ({ children }) => {
     const [currentLanguage, setCurrentLanguage] = useState<'en' | 'fr'>(getBrowserLanguage())
+    const [appTextData, setAppTextData] = useState<AppTextInterfacesWithLanguage | null>(null)
+
+    useEffect(() => {
+        fetch(`${import.meta.env.BASE_URL}assets/jsons/appText.json`)
+            .then(res => res.json())
+            .then((data: AppTextInterfacesWithLanguage) => setAppTextData(data))
+    }, [])
 
     const setLanguage = (language: 'en' | 'fr') => setCurrentLanguage(language)
 
-    const appTextData = appText as AppTextInterfacesWithLanguage
+    if (!appTextData) return null
+
     const currentAppText = appTextData[currentLanguage]
 
     return (
