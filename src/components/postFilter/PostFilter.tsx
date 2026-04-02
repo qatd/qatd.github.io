@@ -78,8 +78,9 @@ const PostFilter: React.FC<PostFilterProps> = ({ projectPosts, setSelectedTags, 
             variants={slideFromRight}
             initial='initial'
             animate='animate'
-            exit='exit'
-            transition={{duration:.5,ease:'easeInOut'}}
+            // override exit inline so its transition is short (doesn't block page-level AnimatePresence mode='wait')
+            exit={{ opacity: 0, x: 20, transition: { duration: 0.1, ease: 'easeIn' } }}
+            transition={{duration:.4,ease:'easeInOut'}}
         >
             <p className='postFilter-title'>{appText.projects.filter}</p>
             {isOnSmallerScreen

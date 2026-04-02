@@ -4,8 +4,16 @@ import { progressiveShowUpWithZoom, zoomEffect } from '../style/animations/anima
 import styled from 'styled-components'
 import { useLocation } from 'react-router-dom'
 import { useLanguage } from '../contexts/useLanguage'
+import { motion, Variants } from 'framer-motion'
 
-const StyleContainer = styled.div`
+// Orchestrates child animations: stagger title → content on enter, reverse on exit
+const pageContainerVariants: Variants = {
+    initial: {},
+    animate: { transition: { staggerChildren: 0.1 } },
+    exit:    { transition: { staggerChildren: 0.05, staggerDirection: -1 } },
+}
+
+const StyleContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     margin: 0 3%;
@@ -26,13 +34,18 @@ const PageComponent: React.FC<PageComponentProps> = ({ children }) => {
     const title = appText.pages.find(p => p.id === routeId)?.text ?? routeId
 
     return (
-        <StyleContainer>
-
-            <AnimationWrapper className="pageComponent-pages" animationType={progressiveShowUpWithZoom} transitionDuration={.3}>
+        <StyleContainer
+            variants={pageContainerVariants}
+            initial='initial'
+            animate='animate'
+            exit='exit'
+        >
+            {/* propagate=true: parent StyleContainer controls when this animates */}
+            <AnimationWrapper propagate className="pageComponent-pages" animationType={progressiveShowUpWithZoom} transitionDuration={.2}>
                 <h2>{title}</h2>
             </AnimationWrapper>
 
-            <AnimationWrapper className="pageComponent-pages" animationType={zoomEffect} transitionDuration={.2}>
+            <AnimationWrapper propagate className="pageComponent-pages" animationType={zoomEffect} transitionDuration={.15}>
                 {children}
             </AnimationWrapper>
 

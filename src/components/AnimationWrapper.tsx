@@ -9,16 +9,17 @@ interface AnimationWrapperProps {
     className?:string
     layout?:boolean
     layoutTransition?:Tween | Spring
+    // when true, omits initial/animate/exit so a parent motion element
+    // can orchestrate this child via variant propagation
+    propagate?:boolean
 }
 
-const AnimationWrapper: FC<AnimationWrapperProps> = ({transitionDuration, animationType, children, className, layout, layoutTransition}) => {
+const AnimationWrapper: FC<AnimationWrapperProps> = ({transitionDuration, animationType, children, className, layout, layoutTransition, propagate}) => {
 
     return (
         <motion.div
             variants={animationType}
-            initial='initial'
-            animate='animate'
-            exit='exit'
+            {...(!propagate && { initial:'initial', animate:'animate', exit:'exit' })}
             transition={{
                 duration:transitionDuration,
                 ease:'easeInOut',
