@@ -1,10 +1,9 @@
 import ReactPlayer from "react-player/youtube"
-import { PostInterface, PostMediasInterface } from "../../../interfaces/postsInterfaces"
+import { PostInterface } from "../../../interfaces/postsInterfaces"
 import { screen_tablet } from "../../../utils/responsiveUtils"
 import { useMediaQuery } from "react-responsive"
 import ImageWrapper from "../../ImageWrapper"
 import { useState } from "react"
-import { AnimatePresence } from "framer-motion"
 import styled from "styled-components"
 
 const StyleContainer = styled.div`
@@ -67,17 +66,23 @@ const PostMedias:React.FC<PostMediasProps> = ({medias}) => {
 
     const smallScreen = useMediaQuery({maxWidth:screen_tablet})
 
-    // keeping track of the selected image, in order to show it up in the image wrapper
-    const [selectedImage, setSelectedImage] = useState<PostMediasInterface | null>(null)
+    // index of the currently open image (null = viewer closed)
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null)
 
     if (!medias) return null
 
-    const openImageWrapper = (selectedImage:PostMediasInterface):void => {
-        setSelectedImage(selectedImage)
+    const openImageWrapper = (index: number): void => {
+        setSelectedIndex(index)
     }
 
-    const closingImageWrapper = ():void =>{
-        setSelectedImage(null)
+    const closingImageWrapper = (): void => {
+        setSelectedIndex(null)
+    }
+
+    const navigateImage = (direction: 1 | -1): void => {
+        if (selectedIndex === null || !medias.images) return
+        const total = medias.images.length
+        setSelectedIndex((selectedIndex + direction + total) % total)
     }
 
     return (
@@ -98,22 +103,21 @@ const PostMedias:React.FC<PostMediasProps> = ({medias}) => {
             
             {medias.images && 
                 <div className="postMedias-imageSection">
-                    {medias.images.map((image) => (
-                        <img key={image.id} src={image.linkPath} alt={image.text} onClick={() => openImageWrapper(image)} loading="lazy" decoding="async"/>
+                    {medias.images.map((image, index) => (
+                        <img key={image.id} src={image.linkPath} alt={image.text} onClick={() => openImageWrapper(index)} loading="lazy" decoding="async"/>
                     ))}
                 </div>
             }
             
-            <AnimatePresence mode='wait'>
-                {selectedImage && 
-                    <ImageWrapper 
-                        key='imageWrapper' 
-                        pathHdImage={selectedImage.linkPathHd} 
-                        imageDescription={selectedImage.text} 
-                        closingImageWrapper={closingImageWrapper}
-                    />
-                }
-            </AnimatePresence>
+            {/* ImageWrapper manages its own enter/exit animation internally via portal */}
+            {selectedIndex !== null && medias.images &&
+                <ImageWrapper
+                    images={medias.images}
+                    currentIndex={selectedIndex}
+                    onNavigate={navigateImage}
+                    closingImageWrapper={closingImageWrapper}
+                />
+            }
 
         </StyleContainer>
     )
