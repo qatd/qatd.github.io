@@ -1,5 +1,5 @@
 import { motion, Spring, Tween, Variants } from "framer-motion"
-import { zoomEffect } from "../style/animations/animations"
+// import { zoomEffect } from "../style/animations/animations"
 import { FC } from "react"
 
 interface AnimationWrapperProps {
@@ -15,12 +15,12 @@ const AnimationWrapper: FC<AnimationWrapperProps> = ({transitionDuration, animat
 
     return (
         <motion.div
-            variants={animationType ?? zoomEffect}
+            variants={animationType}
             initial='initial'
             animate='animate'
             exit='exit'
             transition={{
-                duration:transitionDuration ?? .2,
+                duration:transitionDuration,
                 ease:'easeInOut',
                 layout:layout ? (layoutTransition ?? {type:'tween',ease:'easeInOut'}) : undefined
             }}
