@@ -1,12 +1,5 @@
-import { createContext, FC, ReactNode } from "react"
+import { createContext } from "react"
 import { TagGroupedByCategory, TagInterface } from "../interfaces/postsInterfaces"
-import tagsData from '../../public/assets/jsons/tags.json'
-import { useLanguage } from "./useLanguage"
-
-interface TagsInterfacesWithLanguage {
-    en: TagInterface[]
-    fr: TagInterface[]
-}
 
 export interface TagsContextType {
     tags: TagInterface[]
@@ -16,52 +9,5 @@ export interface TagsContextType {
 }
 
 const TagsContext = createContext<TagsContextType | undefined>(undefined)
-
-export const TagsProvider: FC<{ children: ReactNode }> = ({ children }) => {
-    const { currentLanguage } = useLanguage()
-    const tags = (tagsData as TagsInterfacesWithLanguage)[currentLanguage]
-
-    // return the tag that has the id given as parameter
-    // if no match, return undefined
-    const getTagById = (id:string) => {
-        return tags.find(tag => tag.id === id)
-    }
-
-    // return the tags objects, from an array of tag id
-    const getTagsByIds = (ids:string[]) => {
-        return ids.map((id => getTagById(id))).filter((tag): tag is TagInterface => Boolean(tag)) // the filter here retain only the tag object (and filter out the case where getTagById return undefined)
-    }
-
-    // return the tags grouped into their categories
-    const getTagsGroupedByCategory = (ids:string[]) => {
-        const tagsObjects = getTagsByIds(ids)
-
-        // checking whether the method groupBy exist in the browser context
-        // (because groupBy is a ES2024 feature so it may not be compatible with all browsers)
-        const hasGroupBy = typeof Object.groupBy === 'function'
-        
-        // return an object with the category as string and then an array of the tags that belong to this category
-        // if the browser don't support groupBy, return another way to achieve the same result
-        const groupedTags: Partial<Record<string, TagInterface[]>> = hasGroupBy
-            ? Object.groupBy(tagsObjects, (tag) => tag.category)
-            : tagsObjects.reduce((acc,t) => {
-                (acc[t.category] ||= []).push(t)
-                return acc
-            },{} as Record<string,TagInterface[]>)
-        
-        // console.log('------ tag context getTagsGroupedByCategory ------',groupedTags)
-
-        return Object.keys(groupedTags)
-            // .sort().reverse()
-            // retrieve the tag object from groupedTags for each category
-            .map(category => ({category, tags: groupedTags[category] ?? []}))
-    }
-
-    return (
-        <TagsContext.Provider value={{tags,getTagById, getTagsByIds, getTagsGroupedByCategory}}>
-            {children}
-        </TagsContext.Provider>
-    )
-}
 
 export { TagsContext }

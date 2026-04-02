@@ -8,7 +8,7 @@
     "dev": "vite --host",
     "predeploy": "vite build --base=./",
     "deploy": "gh-pages -d dist",
-    "build": "tsc -b && vite build --base=./",
+    "build": "eslint src --max-warnings 0 && tsc -b && vite build --base=./",
     "lint": "eslint .",
     "preview": "vite preview"
   },

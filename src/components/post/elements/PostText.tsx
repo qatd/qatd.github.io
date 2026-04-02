@@ -20,8 +20,8 @@ interface PostTextProps {
 const PostText: FC<PostTextProps> = ({textParagraphs, className}) => {
     return (
         <StyleContainer className={`${className ? 'postText-'+className : ''}`}>
-            {textParagraphs.map((postTextParagraph)=> (
-                <p key={postTextParagraph}>{postTextParagraph}</p>
+            {textParagraphs.map((postTextParagraph, index)=> (
+                <p key={index}>{postTextParagraph}</p>
             ))}
         </StyleContainer>
     )

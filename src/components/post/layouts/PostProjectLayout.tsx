@@ -5,6 +5,7 @@ import PostKeypoints from "../elements/PostKeypoints"
 import PostText from "../elements/PostText"
 import PostTags from "../elements/PostTags"
 import PostTitle from "../elements/PostTitle"
+import FallbackLoading from "../../fallbackComponents/FallbackLoading"
 import { useInView } from "framer-motion"
 
 interface PostProjectLayoutProps {
@@ -17,7 +18,7 @@ const PostMedias = lazy(() => import('../elements/PostMedias'))
 const PostProjectLayout: FC<PostProjectLayoutProps> = ({postData, tabletScreen}) => {
 
     const containerRef = useRef<HTMLDivElement | null>(null)
-    const inView = useInView(containerRef, { margin: "500px 0px 500px 0px", amount: 0 })
+    const inView = useInView(containerRef, { margin: "500px 0px 500px 0px", amount: 0, once: true })
 
     return (
         <>
@@ -27,7 +28,7 @@ const PostProjectLayout: FC<PostProjectLayoutProps> = ({postData, tabletScreen})
             </div>
             <div ref={containerRef} className={`postContentSection postContentSection-project ${tabletScreen ? 'postContentSection-smallerScreen' : ''}`}>
                 
-                <Suspense fallback={'loading...'}>
+                <Suspense fallback={<FallbackLoading />}>
                     {inView && <PostMedias medias={postData.medias}/>}
                 </Suspense>
                 

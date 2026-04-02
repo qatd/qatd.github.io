@@ -2,7 +2,8 @@ import { TagInterface } from "../interfaces/postsInterfaces"
 import { useMemo, useState } from "react"
 import { screen_desktop_medium, screen_desktop_small } from "../utils/responsiveUtils"
 import { useMediaQuery } from "react-responsive"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import { postItem } from "../style/animations/animations"
 import styled from "styled-components"
 import Post from "../components/post/Post"
 import PostFilter from "../components/postFilter/PostFilter"
@@ -63,12 +64,21 @@ const Projects = () => {
             
             <div className={`projectItems ${isOnDesktopMediumScreen ? 'projectItems-mediumScreen' : ''}`}>
                 <AnimatePresence mode='sync'>
-                    {filteredPosts.map(projectData => (
-                        <Post
+                    {filteredPosts.map((projectData, index) => (
+                        <motion.div
                             key={projectData.id}
-                            postData={projectData}
-                            variantType='project'
-                        />
+                            variants={postItem}
+                            initial="initial"
+                            animate="animate"
+                            exit="exit"
+                            custom={index}
+                            layout
+                        >
+                            <Post
+                                postData={projectData}
+                                variantType='project'
+                            />
+                        </motion.div>
                     ))}
                 </AnimatePresence>
             </div>

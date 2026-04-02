@@ -10,7 +10,7 @@ export const pageTransitionInOut: Variants = {
 export const zoomEffect: Variants = {
     initial:{ 
         opacity: 0, 
-        scale: 0.99
+        scale: 0.996
     },
     animate:{ 
         opacity: 1, 
@@ -18,7 +18,7 @@ export const zoomEffect: Variants = {
     },
     exit:{ 
         opacity: 0, 
-        scale: 0.99
+        scale: 0.996
     }
 }
 export const slideFromTop: Variants = {
@@ -54,7 +54,7 @@ export const bounce: Variants = {
     initial:{ 
         // backdropFilter:'blur(0rem)',
         // opacity: 0, 
-        scale: 0.9,
+        scale: 0.97,
     },
     animate:{ 
         // backdropFilter:'blur(5rem)',
@@ -63,7 +63,7 @@ export const bounce: Variants = {
     },
     exit:{ 
         // backdropFilter:'blur(0rem)',
-        scale: 0.95,
+        scale: 0.97,
         opacity:0,
     }
 }
@@ -204,6 +204,41 @@ export const headerAppearance: Variants = {
         // y: -20
     }
 }
+// like progressiveShowUp but exit is delayed so the image disappears before the background
+export const imageViewerShowUp: Variants = {
+    initial:{
+        backdropFilter:'blur(0rem)',
+    },
+    animate:{
+        backdropFilter:'blur(2.5rem)',
+    },
+    exit:{
+        backdropFilter:'blur(0rem)',
+        transition:{
+            backdropFilter:{ duration: .5, ease:'easeInOut' },
+            // opacity:{ delay: .2, duration: .5, ease:'easeInOut' }
+        }
+    }
+}
+
+// staggered enter/exit for filtered post lists
+export const postItem: Variants = {
+    initial: { opacity: 0, y: 15 },
+    animate: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: { delay: Math.min(i, 5) * 0.05, duration: 0.3, ease: 'easeOut' }
+    }),
+    exit: { opacity: 0, scale: 0.98, transition: { duration: 0.18, ease: 'easeIn' } },
+}
+
+// direction-aware slide for image navigation: pass custom={1} for forward, custom={-1} for back
+export const slideNav: Variants = {
+    initial: (dir: number) => ({ opacity: 0, x: dir * 40 }),
+    animate: { opacity: 1, x: 0 },
+    exit: (dir: number) => ({ opacity: 0, x: dir * -40 }),
+}
+
 export const imageWrapper: Variants = {
     initial:{ 
         opacity: 0,

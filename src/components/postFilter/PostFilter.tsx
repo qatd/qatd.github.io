@@ -52,14 +52,15 @@ const PostFilter: React.FC<PostFilterProps> = ({ projectPosts, setSelectedTags, 
 
     // Extract all unique tags from the projects posts
     // we don't get them from tags context, because then we would get tags that are not used in projects
-    const postsTagsIds = Array.from(
-        new Set(projectPosts.flatMap(post => post.tagsId?.map(tag => tag) || []))
+    const postsTagsIds = useMemo(
+        () => Array.from(new Set(projectPosts.flatMap(post => post.tagsId ?? []))),
+        [projectPosts]
     )
 
     // create the structure to group the tags by their category
     const tagsByCategory = useMemo(
         () => getTagsGroupedByCategory(postsTagsIds),
-        [postsTagsIds]
+        [postsTagsIds, getTagsGroupedByCategory]
     )
 
     // Handle tag selection toggling
@@ -77,8 +78,9 @@ const PostFilter: React.FC<PostFilterProps> = ({ projectPosts, setSelectedTags, 
             variants={slideFromRight}
             initial='initial'
             animate='animate'
-            exit='exit'
-            transition={{duration:.5,ease:'easeInOut'}}
+            // override exit inline so its transition is short (doesn't block page-level AnimatePresence mode='wait')
+            exit={{ opacity: 0, x: 20, transition: { duration: 0.1, ease: 'easeIn' } }}
+            transition={{duration:.4,ease:'easeInOut'}}
         >
             <p className='postFilter-title'>{appText.projects.filter}</p>
             {isOnSmallerScreen

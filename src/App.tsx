@@ -1,16 +1,14 @@
-import { Suspense } from "react"
 import { Navigate, Route, Routes, useLocation } from "react-router-dom"
 import Header from "./components/header/Header"
-import { ErrorBoundary } from "react-error-boundary"
 import { AnimatePresence } from "framer-motion"
 import Footer from "./components/bottomSection/Footer"
 import PageComponent from "./pages/PageComponent"
-import FallbackError from "./components/fallbackComponents/FallbackError"
-import FallbackLoading from "./components/fallbackComponents/FallbackLoading"
+import ErrorSuspenseWrapper from "./components/fallbackComponents/ErrorSuspenseWrapper"
 import { useMediaQuery } from "react-responsive"
 import { screen_mobile } from "./utils/responsiveUtils"
 import styled from "styled-components"
-import { useLanguage } from "./contexts/useLanguage"
+import { GlobalStyle } from "./style/globalRules"
+import { ROUTES } from "./routes/routeConfig"
 
 const StyleContainer = styled.div`
     display: flex;
@@ -25,9 +23,6 @@ const StyleContainer = styled.div`
 
 const App = () => {
 
-    // get text from the context provider
-    const {appText} = useLanguage()
-
     // getting the location datas in the app
     const location = useLocation()
 
@@ -35,6 +30,7 @@ const App = () => {
 
     return (
         <StyleContainer className={`app ${isOnMobileScreen ? 'app-mobile' : ''}`}>
+            <GlobalStyle />
             
             <Header/>
             
@@ -42,16 +38,16 @@ const App = () => {
 
                 <Routes location={location} key={location.pathname}>
 
-                    {appText.pages.map((pageItem) => (
-                        <Route 
-                            key={pageItem.id} 
-                            path={pageItem.id} 
+                    {ROUTES.map(({ id, component: Page }) => (
+                        <Route
+                            key={id}
+                            path={id}
                             element={
-                                <ErrorBoundary fallback={<FallbackError/>}>
-                                    <Suspense fallback={<FallbackLoading/>}>
-                                        <PageComponent pageItem={pageItem}/>
-                                    </Suspense>
-                                </ErrorBoundary>
+                                <ErrorSuspenseWrapper>
+                                    <PageComponent>
+                                        <Page/>
+                                    </PageComponent>
+                                </ErrorSuspenseWrapper>
                             }
                         />
                     ))}

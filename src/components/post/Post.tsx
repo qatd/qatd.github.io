@@ -6,10 +6,8 @@ import styled from "styled-components"
 
 import PostPresentationLayout from "./layouts/PostPresentationLayout"
 import PostProjectLayout from "./layouts/PostProjectLayout"
-import { motion } from "framer-motion"
-import { progressiveShowUpWithZoom } from "../../style/animations/animations"
 
-const StyleContainer = styled(motion.div)`
+const StyleContainer = styled.div`
     display: flex;
     max-width: 70rem;
 
@@ -127,12 +125,6 @@ const Post:React.FC<PostProps & PostVariantProps> = ({ postData, variantType }) 
                 ${mobileScreen ? 'post-mobile' : ''}
                 ${tabletScreen ? 'post-tablet' : ''}
             `}
-            variants={progressiveShowUpWithZoom} 
-            initial='initial'
-            animate='animate'
-            exit='exit'
-            transition={{duration:.3,ease:'easeInOut'}}
-            layout
         >
             {variantType === 'presentation' 
                 ? <PostPresentationLayout postData={postData} tabletScreen={tabletScreen} />
