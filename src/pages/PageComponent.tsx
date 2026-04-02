@@ -2,6 +2,8 @@ import { ReactNode } from 'react'
 import AnimationWrapper from '../components/AnimationWrapper'
 import { progressiveShowUpWithZoom, zoomEffect } from '../style/animations/animations'
 import styled from 'styled-components'
+import { useLocation } from 'react-router-dom'
+import { useLanguage } from '../contexts/useLanguage'
 
 const StyleContainer = styled.div`
     display: flex;
@@ -12,11 +14,17 @@ const StyleContainer = styled.div`
 `
 
 interface PageComponentProps {
-    title: string
     children: ReactNode
 }
 
-const PageComponent: React.FC<PageComponentProps> = ({ title, children }) => {
+const PageComponent: React.FC<PageComponentProps> = ({ children }) => {
+    const { pathname } = useLocation()
+    const { appText } = useLanguage()
+
+    // Strip leading slash to match route ids (e.g. '/projects' → 'projects')
+    const routeId = pathname.replace(/^\//, '')
+    const title = appText.pages.find(p => p.id === routeId)?.text ?? routeId
+
     return (
         <StyleContainer>
 

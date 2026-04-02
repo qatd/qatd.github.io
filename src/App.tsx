@@ -7,7 +7,6 @@ import ErrorSuspenseWrapper from "./components/fallbackComponents/ErrorSuspenseW
 import { useMediaQuery } from "react-responsive"
 import { screen_mobile } from "./utils/responsiveUtils"
 import styled from "styled-components"
-import { useLanguage } from "./contexts/useLanguage"
 import { GlobalStyle } from "./style/globalRules"
 import { ROUTES } from "./routes/routeConfig"
 
@@ -24,9 +23,6 @@ const StyleContainer = styled.div`
 
 const App = () => {
 
-    // get text from the context provider
-    const {appText} = useLanguage()
-
     // getting the location datas in the app
     const location = useLocation()
 
@@ -42,23 +38,19 @@ const App = () => {
 
                 <Routes location={location} key={location.pathname}>
 
-                    {ROUTES.map(({ id, component: Page }) => {
-                        // look up the translated page title from appText
-                        const pageTitle = appText.pages.find(p => p.id === id)?.text ?? id
-                        return (
-                            <Route
-                                key={id}
-                                path={id}
-                                element={
-                                    <ErrorSuspenseWrapper>
-                                        <PageComponent title={pageTitle}>
-                                            <Page/>
-                                        </PageComponent>
-                                    </ErrorSuspenseWrapper>
-                                }
-                            />
-                        )
-                    })}
+                    {ROUTES.map(({ id, component: Page }) => (
+                        <Route
+                            key={id}
+                            path={id}
+                            element={
+                                <ErrorSuspenseWrapper>
+                                    <PageComponent>
+                                        <Page/>
+                                    </PageComponent>
+                                </ErrorSuspenseWrapper>
+                            }
+                        />
+                    ))}
 
                     {/* in case of a mistype in the url, this route below will redirect to the root / */}
                     <Route path="*" element={<Navigate to="/" replace />}/>

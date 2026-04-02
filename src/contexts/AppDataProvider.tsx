@@ -1,4 +1,5 @@
 import { FC, ReactNode, useEffect, useState } from "react"
+import FallbackLoading from "../components/fallbackComponents/FallbackLoading"
 import { AppTextInterfacesWithLanguage, AppTextInterface } from "../interfaces/appTextInterfaces"
 import { PostInterface, PostsInterfaceWithLanguage, TagGroupedByCategory, TagInterface } from "../interfaces/postsInterfaces"
 import { LanguageContext } from "./LanguageContextProvider"
@@ -60,8 +61,8 @@ export const AppDataProvider: FC<{ children: ReactNode }> = ({ children }) => {
         })
     }, [])
 
-    // Block rendering until all 3 fetches complete (same UX as before, but only one wait)
-    if (!allData) return null
+    // Block rendering until all 3 fetches complete
+    if (!allData) return <FallbackLoading/>
 
     const { appText: appTextData, posts, rawTags } = allData
     const appText: AppTextInterface = appTextData[currentLanguage]
