@@ -82,52 +82,69 @@
                 "id": "kosmo_project",
                 "projectOrigin": "Personal project",
                 "title": "Kosmo Project",
-                "description": "An ideal social network for me. (In progress...)",
-                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma", "tag_vercel", "tag_neon"],
+                "description": "Social network mixing Reddit and X/Twitter features",
+                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
-                    "The idea behind this project was to create my ideal Twitter-like social network.",
-                    "Since I felt frustrated by the absence of some features that are crucial to me in X/Twitter, I decided to channel that frustration into building something of my own.", 
-                    "For me, many features on Reddit are really well-designed and should be integrated into Twitter. I've drawn a lot of inspiration from it.",
-                    "I don't take it too seriously for now though, I see it more as a portfolio project to show off a bit, rather than something that will release for real one day, but who knows 🤷🏻‍♂️"
+                    "The idea behind this project is to create a social network that mixes Reddit features — voting system, communities — with a global feed similar to X/Twitter.",
+                    "I felt frustrated by the absence of some features that seem important to me in X/Twitter, so I decided to build something of my own."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Key features : ", 
+                    "text":"Key features : ",
                     "points":[
-                        {"id":1,"text":"Meant to be a healthy social network"},
-                        {"id":2,"text":"Upvote/downvote system"},
-                        {"id":3,"text":"Built almost Vanilla. No libraries for managing animations / responsive / pages.."}
+                        {"id":1,"text":"Upvote/downvote system"},
+                        {"id":2,"text":"Community creation"},
+                        {"id":3,"text":"Global feed similar to X/Twitter"}
                     ]
                 },
                 "postsLinks": [
                     {"linkName": "Github repo","link": "https://github.com/quentinvespero/kosmo"},
-                    {"linkName": "Current version online (old build)","link": "https://quentinvespero.github.io/kosmo_front_web/"}
+                    {"linkName": "link","link": "https://kosmo.to"},
+                    {"linkName": "roadmap","link": "https://kosmo.to/roadmap"}
                 ],
                 "medias": {
                     "videos":[
                         {
                             "id": 1,
                             "linkPath": "https://youtu.be/mfaUbzyOqTk",
-                            "text": "A video showing off the project"
+                            "text": "Old build - video of the project"
                         }
                     ],
                     "images":[
                         {
                             "id": 1,
-                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo3.png",
-                            "text": "Entry page"
+                            "linkPath": "./assets/imgs/kosmo4_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo4.png",
+                            "text": "Landing page"
                         },
                         {
                             "id": 2,
-                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo1.png",
+                            "linkPath": "./assets/imgs/kosmo5_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo5.png",
                             "text": "Home page"
                         },
                         {
                             "id": 3,
+                            "linkPath": "./assets/imgs/kosmo6_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo6.png",
+                            "text": "Profile page"
+                        },
+                        {
+                            "id": 4,
+                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo3.png",
+                            "text": "old build - landing"
+                        },
+                        {
+                            "id": 5,
+                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo1.png",
+                            "text": "old build - home"
+                        },
+                        {
+                            "id": 6,
                             "linkPath": "./assets/imgs/kosmo2_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo2.png",
-                            "text": "Home page displaying posts in a column view, with the menu to create a post toggled."
+                            "text": "old build - home"
                         }
                     ]
                 }
@@ -362,52 +379,69 @@
                 "id": "kosmo_project",
                 "projectOrigin": "Projet personnel",
                 "title": "Projet Kosmo",
-                "description": "Un réseau social idéal selon moi. (En cours...)",
-                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_prisma", "tag_vercel", "tag_neon"],
+                "description": "Reseau social mixant features de Reddit et X/Twitter",
+                "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
-                    "L'idée derrière ce projet est un peu de créer mon réseau social idéal, type Twitter/X.",
-                    "Il y a beaucoup de fonctions que j'aurais voulu voir arriver et qui me semblent importante dans X/Twitter, j'ai décidé de canaliser cette frustration en construisant quelque chose qui m'appartient.",
-                    "Pour moi, beaucoup de fonctionnalités sur Reddit sont vraiment bien pensées et devraient être intégrées dans Twitter/X. J'ai beaucoup puisé mon inspiration sur Reddit.",
-                    "Je ne le prends pas trop au sérieux pour l'instant, je le vois plus comme un projet portfolio, plutôt que comme quelque chose qui sortira vraiment un jour, mais qui sait 🤷🏻‍♂️"
+                    "L'idée de ce projet est de créer un réseau social qui mix des features de Reddit, avec le système de vote, les communautés, et en même temps un feed global type X/Twitter",
+                    "Je me sentais frustré de l'absence de certaines fonctions qui me semblent importante dans X/Twitter, alors j'ai décidé de construire quelque chose qui m'appartient."
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ", 
                     "points":[
-                        {"id":1,"text":"Destiné à être un réseau social sain"},
-                        {"id":2,"text":"Système d'upvote/downvote"},
-                        {"id":3,"text":"Je reconstruis le projet quasi de zero dans la version 2, en utilisant NextJS"}
+                        {"id":1,"text":"Système d'upvote/downvote"},
+                        {"id":2,"text":"création de communautés"},
+                        {"id":3,"text":"Fonctionnement similaire à X/twitter avec feed global"}
                     ]
                 },
                 "postsLinks": [
                     {"linkName": "Repo Github","link": "https://github.com/quentinvespero/kosmo"},
-                    {"linkName": "Version actuelle en ligne (vieux build)","link": "https://quentinvespero.github.io/kosmo_front_web/"}
+                    {"linkName": "lien","link": "https://kosmo.to"},
+                    {"linkName": "roadmap","link": "https://kosmo.to/roadmap"}
                 ],
                 "medias": {
                     "videos":[
                         {
                             "id": 1,
                             "linkPath": "https://youtu.be/mfaUbzyOqTk",
-                            "text": "Une vidéo montrant le projet"
+                            "text": "Old build - video du projet"
                         }
                     ],
                     "images":[
                         {
                             "id": 1,
-                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo3.png",
-                            "text": "Page d'entrée"
+                            "linkPath": "./assets/imgs/kosmo4_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo4.png",
+                            "text": "Landing page"
                         },
                         {
                             "id": 2,
-                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo1.png",
-                            "text": "Page d'accueil"
+                            "linkPath": "./assets/imgs/kosmo5_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo5.png",
+                            "text": "Home page"
                         },
                         {
                             "id": 3,
+                            "linkPath": "./assets/imgs/kosmo6_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo6.png",
+                            "text": "Profile page"
+                        },
+                        {
+                            "id": 4,
+                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo3.png",
+                            "text": "old build - landing"
+                        },
+                        {
+                            "id": 5,
+                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
+                            "linkPathHd":"./assets/imgs/kosmo1.png",
+                            "text": "old build - home"
+                        },
+                        {
+                            "id": 6,
                             "linkPath": "./assets/imgs/kosmo2_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo2.png",
-                            "text": "Page d'accueil affichant les posts en vue colonne, avec le menu pour créer un post activé."
+                            "text": "old build - home"
                         }
                     ]
                 }
