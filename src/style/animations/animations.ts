@@ -221,6 +221,17 @@ export const imageViewerShowUp: Variants = {
     }
 }
 
+// staggered enter/exit for filtered post lists
+export const postItem: Variants = {
+    initial: { opacity: 0, y: 15 },
+    animate: (i: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: { delay: Math.min(i, 5) * 0.05, duration: 0.3, ease: 'easeOut' }
+    }),
+    exit: { opacity: 0, scale: 0.98, transition: { duration: 0.18, ease: 'easeIn' } },
+}
+
 // direction-aware slide for image navigation: pass custom={1} for forward, custom={-1} for back
 export const slideNav: Variants = {
     initial: (dir: number) => ({ opacity: 0, x: dir * 40 }),
