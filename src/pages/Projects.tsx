@@ -63,7 +63,7 @@ const Projects = () => {
         <StyleContainer className={`projects ${isOnDesktopSmallScreen ? 'projects-smallerScreen' : ''}`}>
             
             <div className={`projectItems ${isOnDesktopMediumScreen ? 'projectItems-mediumScreen' : ''}`}>
-                <AnimatePresence mode='popLayout'>
+                <AnimatePresence mode='sync'>
                     {filteredPosts.map((projectData, index) => (
                         <motion.div
                             key={projectData.id}
