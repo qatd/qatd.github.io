@@ -33,9 +33,32 @@
         ],
         "projects": [
             {
+                "id": "semantic_search_project",
+                "projectOrigin": "Personal project",
+                "title": "Voxearch • Semantic searches on audio transcripts",
+                "description": "Tool to create & store audio transcripts in vector db",
+                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "postTextParagraphs": [
+                    "A tool to gather, transcribe, and store transcription in both sql and vector db, to perform semantic search on them",
+                    "Everything is done locally. Using local models for both transcription and embedding",
+                    "Compatible with Apple's MLX framework. Support for Nvidia in progress."
+                ],
+                "postTextKeyPoints":{
+                    "text":"Key points : ",
+                    "points":[
+                        {"id":1,"text":"Gather files via yt-dlp from a single flux url"},
+                        {"id":2,"text":"Local only, no API used"},
+                        {"id":3,"text":"Compatible with Apple MLX, Nvidia support coming"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Github repo","link": "https://github.com/quentinvespero/podcast_transcription"}
+                ]
+            },
+            {
                 "id": "kosmo_project",
                 "projectOrigin": "Personal project",
-                "title": "Kosmo Project",
+                "title": "Kosmo",
                 "description": "Social network mixing Reddit and X/Twitter features",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
@@ -73,27 +96,39 @@
                 }
             },
             {
-                "id": "semantic_search_project",
+                "id": "tetron77",
                 "projectOrigin": "Personal project",
-                "title": "Semantic searches on audio transcripts",
-                "description": "Script to create & store audio transcripts in vector db",
-                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "title": "Tetron77",
+                "description": "Shooter and exploration game with a heavy atmosphere",
+                "tagsId": ["tag_ts", "tag_threeJs", "tag_rapier", "tag_webgl", "tag_abletonLive", "tag_browserGame", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "A project to perform semantic search on large volumes of audio transcripts.",
-                    "It first gather audio files using yt-dlp, then create transcriptions via Whisper.cpp.",
-                    "Then the transcriptions chunks are stored in a sql db, which will be used to create embeddings.",
-                    "Finally, those embeddings will be stored in a vector DB"
+                    "A little shooter and exploration game with a heavy atmosphere",
+                    "Use hybrid-procedural generation to generate the world.",
+                    "The world layout is handcrafted from an image file, and then the procedural generation make it real",
+                    "Ambient music composed by myself.",
+                    "Made for the Cursor Vibe Jam 2026, organised by @levelsio"
                 ],
-                "postTextKeyPoints":{
-                    "text":"Key points : ",
-                    "points":[
-                        {"id":1,"text":"Gather files via yt-dlp from a single flux url"},
-                        {"id":2,"text":"Transcriptions generated locally, no API used"}
+                "postTextKeyPoints": {
+                    "text": "Key features : ",
+                    "points": [
+                        {"id": 1, "text": "Post-apocalyptic, heavy ambient, atmospheric"},
+                        {"id": 2, "text": "Hybrid-procedural"},
+                        {"id": 3, "text": "Shooter, survival"}
                     ]
                 },
                 "postsLinks": [
-                    {"linkName": "Github repo","link": "https://github.com/quentinvespero/podcast_transcription"}
-                ]
+                    {"linkName": "Github repo", "link": "https://github.com/quentinvespero/tetron77"},
+                    {"linkName": "Play online", "link": "https://quentinvespero.github.io/tetron77/"}
+                ],
+                "medias": {
+                    "videos": [
+                        {
+                            "id": 1,
+                            "linkPath": "https://youtu.be/fvlbmjmncI4",
+                            "text": "Gameplay video"
+                        }
+                    ]
+                }
             },
             {
                 "id": "portfolio_project",
@@ -300,9 +335,32 @@
         ],
         "projects": [
             {
+                "id": "semantic_search_project",
+                "projectOrigin": "Projet personnel",
+                "title": "Voxearch • Recherches sémantiques sur transcriptions audio",
+                "description": "Outil pour générer transcriptions audio dans db vectorielle",
+                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "postTextParagraphs": [
+                    "Outil pour récupérer, transcrire et stocker des transcriptions dans base SQL et vectorielle, pour d'effectuer des recherches sémantiques/keywords.",
+                    "Tout est fait en local. Utilisation de modèles locaux pour la transcription et l'embedding.",
+                    "Compatible avec le framework MLX d'Apple. Support Nvidia en cours."
+                ],
+                "postTextKeyPoints":{
+                    "text":"Points clés : ",
+                    "points":[
+                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
+                        {"id":2,"text":"100% local, pas d'API externe utilisée"},
+                        {"id":3,"text":"Compatible avec Apple MLX, support Nvidia bientôt"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Repo Github","link": "https://github.com/quentinvespero/podcast_transcription"}
+                ]
+            },
+            {
                 "id": "kosmo_project",
                 "projectOrigin": "Projet personnel",
-                "title": "Projet Kosmo",
+                "title": "Kosmo",
                 "description": "Reseau social mixant features de Reddit et X/Twitter",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
@@ -340,28 +398,39 @@
                 }
             },
             {
-                "id": "semantic_search_project",
+                "id": "tetron77",
                 "projectOrigin": "Projet personnel",
-                "title": "Recherches sémantiques sur transcriptions audio",
-                "description": "Script pour générer transcriptions audio dans db vectorielle",
-                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "title": "Tetron77",
+                "description": "Jeu de tir et d'exploration à l'ambiance lourde",
+                "tagsId": ["tag_ts", "tag_threeJs", "tag_rapier", "tag_webgl", "tag_abletonLive", "tag_browserGame", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "Un projet pour effectuer des recherches sémantiques sur de gros volumes de transcriptions audio à partir de modèle d'IA en local.",
-                    "Il collecte d'abord les fichiers audio en utilisant yt-dlp, puis génère des transcriptions à partir de ces fichiers via Whisper.cpp.",
-                    "Ensuite, les transcriptions sont stockés dans une base de données SQL, qui sera utilisée pour créer des embeddings.",
-                    "Enfin, ces embeddings seront stockés dans une base de données vectorielle",
-                    "Le but final est de pouvoir effectuer des recherches sémantique à partir de ces données"
+                    "Un petit jeu de tir et d'exploration avec une atmosphère pesante.",
+                    "Utilise de la generation procédurale hybride pour générer le monde.",
+                    "Les éléments du monde sont placés à la main depuis un fichier image, puis la génération procédurale fait le reste.",
+                    "Musique d'ambiance composée par moi-même.",
+                    "Fait pour la Cursor Vibe Jam 2026, organisée par @levelsio"
                 ],
-                "postTextKeyPoints":{
-                    "text":"Points clés : ",
-                    "points":[
-                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
-                        {"id":2,"text":"Transcriptions générées à partir de modèle d'IA en local, pas d'API externe utilisée"}
+                "postTextKeyPoints": {
+                    "text": "Caractéristiques : ",
+                    "points": [
+                        {"id": 1, "text": "Post-apocalyptique, ambiance pesante, atmosphérique"},
+                        {"id": 2, "text": "Hybride-procédural"},
+                        {"id": 3, "text": "Shooter, survie"}
                     ]
                 },
                 "postsLinks": [
-                    {"linkName": "Repo Github","link": "https://github.com/quentinvespero/podcast_transcription"}
-                ]
+                    {"linkName": "Repo Github", "link": "https://github.com/quentinvespero/tetron77"},
+                    {"linkName": "Jouer en ligne", "link": "https://quentinvespero.github.io/tetron77/"}
+                ],
+                "medias": {
+                    "videos": [
+                        {
+                            "id": 1,
+                            "linkPath": "https://youtu.be/fvlbmjmncI4",
+                            "text": "Vidéo de gameplay"
+                        }
+                    ]
+                }
             },
             {
                 "id": "portfolio_project",
