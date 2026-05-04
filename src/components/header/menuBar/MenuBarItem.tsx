@@ -25,14 +25,12 @@ const StyleContainer = styled.div`
         }
         &.menuBarItem-selected{
             background: var(--color3);
-            border-radius: 3rem;
         }
     }
     
     & .menuBarItem-buttonWithText{
         cursor: pointer;
         padding: .2rem 1.3rem;
-        border-radius: 3rem;
         white-space: nowrap;
         transition: .1s ease-in-out;
         &:hover{
@@ -47,7 +45,6 @@ const StyleContainer = styled.div`
         position: absolute;
         width: .3rem;
         height: .3rem;
-        border-radius: 3rem;
         background: var(--color2);
         top: 140%;
         left: 50%;
@@ -55,7 +52,6 @@ const StyleContainer = styled.div`
     
     & .menuBarItem-buttonWithIcon {
         padding: .5rem;
-        border-radius: 3rem;
         cursor: pointer;
         transition: .15s ease-in-out;
         &:active{

@@ -18,7 +18,6 @@ const StyleContainer = styled.div`
 const StyledLink = styled.a`
     cursor: pointer;
     padding: .3rem 1rem;
-    border-radius: .3rem;
     font-size: .9rem;
     font-weight: 500;
     text-underline-offset: .4rem;
@@ -32,7 +31,6 @@ const StyledLink = styled.a`
     &:active {
         transform: scale(.98);
         box-shadow: 0 0 0rem .15rem var(--color3);
-        border-radius: .5rem;
     }
 `
 

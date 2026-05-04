@@ -13,13 +13,11 @@ const StyleContainer = styled.div`
 
     /* style for projects posts */
     &.post-project{
-        border-radius: 1.5rem;
         padding: 2rem;
         background: var(--color3);
         flex-direction: column;
         row-gap: 2.5rem;
         backdrop-filter:blur(3rem);
-        border:.1rem solid var(--color3);
         &.post-mobile{
             padding:1rem 1.5rem;
         }

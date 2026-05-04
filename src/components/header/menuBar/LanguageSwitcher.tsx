@@ -14,13 +14,11 @@ const StyleContainer = styled(motion.div)`
     left:50%;
     background:var(--color3);
     padding:1rem;
-    border-radius:.7rem;
     border: solid .1rem var(--color3);
     backdrop-filter:blur(1rem);
     
     & .languageItem{
         padding:.15rem 1rem;
-        border-radius:.3rem;
         cursor:pointer;
         transition:ease-in-out .1s;
         font-size:.85rem;

@@ -15,8 +15,6 @@ const StyleContainer = styled.div<StyleContainerProps>`
     background:var(--color3);
     border: .1rem solid var(--color3);
 
-    border-radius:1rem;
-
     .comment{
         font-size:.8rem;
         align-self:center;

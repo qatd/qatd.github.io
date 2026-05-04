@@ -12,7 +12,6 @@ const StyleContainer = styled.div`
     display: flex;
     align-self: center;
     padding: .5rem 2rem;
-    border-radius: 5rem;
     margin: 2rem;
     transition: .15s;
 `

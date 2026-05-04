@@ -19,7 +19,6 @@ const StyleContainer = styled.div<StyleContainerProps>`
 const StyledLink = styled.a`
     cursor: pointer;
     transition:.15s ease-in-out;
-    border-radius: .3rem;
     font-weight: 500;
     text-underline-offset: .25rem;
     word-break: break-all;
@@ -31,7 +30,6 @@ const StyledLink = styled.a`
     }
     &:active{
         /* box-shadow: 0 0 0rem .15rem var(--color3); */
-        border-radius: .5rem;
         transform: scale(.98);
     }
 `

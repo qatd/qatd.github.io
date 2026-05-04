@@ -11,7 +11,6 @@ const StyleContainer = styled.div`
     flex-direction: column;
     row-gap: 2rem;
     padding: 2rem;
-    border-radius: .7rem;
     align-self: start;
     max-width: 22rem;
     
@@ -23,7 +22,6 @@ const StyleContainer = styled.div`
         align-self: center;
         
         & img{
-            border-radius: .8rem;
             width: 5rem;
             cursor:pointer;
             border:solid .15rem var(--color3);

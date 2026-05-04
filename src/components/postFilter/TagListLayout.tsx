@@ -17,7 +17,6 @@ const ShowMoreButton = styled.div`
     border:var(--border6);
     background: var(--color3);
     font-size:.8rem;
-    border-radius: 3rem;
 
     &:hover{
         filter:brightness(.95);

@@ -7,7 +7,6 @@ const TagGlobalStyle = styled.div`
     align-items: center;
     background: var(--color2);
     color: var(--color1);
-    border-radius: 3rem;
     font-size: .8rem;
     padding: .15rem 1rem;
     padding-left: .4rem;

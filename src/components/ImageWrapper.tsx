@@ -38,7 +38,6 @@ const Style = styled.div`
         & .buttonWithIcon{
             padding: .7rem;
             background: var(--color3);
-            border-radius: 5rem;
             cursor: pointer;
             transition: ease-in-out .15s;
             &:hover {
@@ -65,7 +64,6 @@ const Style = styled.div`
         & img {
             max-width: 100%;
             max-height: 80vh;
-            border-radius: .5rem;
         }
 
         & .imageWrapper-counter{
@@ -85,7 +83,6 @@ const Style = styled.div`
         & .buttonWithIcon{
             padding: .7rem;
             background: var(--color3);
-            border-radius: 5rem;
             cursor: pointer;
             transition: ease-in-out .15s;
             &:hover{

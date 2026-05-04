@@ -10,7 +10,6 @@ const SocialLinkButtonStyle = styled(ButtonWithIcon)`
     position: relative;
     cursor: pointer;
     padding:.6rem;
-    border-radius: 3rem;
     transition:.15s ease-in-out;
     @media (hover:hover){
         &:hover{
@@ -53,7 +52,6 @@ const SocialLinkButtonStyle = styled(ButtonWithIcon)`
         font-size: .6rem;
         font-weight: 400;
         background: var(--color2);
-        border-radius: 3rem;
         color: var(--color1);
         padding: .2rem .7rem;
         inline-size: max-content;
