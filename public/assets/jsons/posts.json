@@ -102,13 +102,6 @@
                     {"linkName": "roadmap","link": "https://kosmo.to/roadmap"}
                 ],
                 "medias": {
-                    "videos":[
-                        {
-                            "id": 1,
-                            "linkPath": "https://youtu.be/mfaUbzyOqTk",
-                            "text": "Old build - video of the project"
-                        }
-                    ],
                     "images":[
                         {
                             "id": 1,
@@ -121,30 +114,6 @@
                             "linkPath": "./assets/imgs/kosmo5_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo5.png",
                             "text": "Home page"
-                        },
-                        {
-                            "id": 3,
-                            "linkPath": "./assets/imgs/kosmo6_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo6.png",
-                            "text": "Profile page"
-                        },
-                        {
-                            "id": 4,
-                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo3.png",
-                            "text": "old build - landing"
-                        },
-                        {
-                            "id": 5,
-                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo1.png",
-                            "text": "old build - home"
-                        },
-                        {
-                            "id": 6,
-                            "linkPath": "./assets/imgs/kosmo2_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo2.png",
-                            "text": "old build - home"
                         }
                     ]
                 }
@@ -399,13 +368,6 @@
                     {"linkName": "roadmap","link": "https://kosmo.to/roadmap"}
                 ],
                 "medias": {
-                    "videos":[
-                        {
-                            "id": 1,
-                            "linkPath": "https://youtu.be/mfaUbzyOqTk",
-                            "text": "Old build - video du projet"
-                        }
-                    ],
                     "images":[
                         {
                             "id": 1,
@@ -418,30 +380,6 @@
                             "linkPath": "./assets/imgs/kosmo5_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo5.png",
                             "text": "Home page"
-                        },
-                        {
-                            "id": 3,
-                            "linkPath": "./assets/imgs/kosmo6_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo6.png",
-                            "text": "Profile page"
-                        },
-                        {
-                            "id": 4,
-                            "linkPath": "./assets/imgs/kosmo3_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo3.png",
-                            "text": "old build - landing"
-                        },
-                        {
-                            "id": 5,
-                            "linkPath": "./assets/imgs/kosmo1_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo1.png",
-                            "text": "old build - home"
-                        },
-                        {
-                            "id": 6,
-                            "linkPath": "./assets/imgs/kosmo2_small.jpeg",
-                            "linkPathHd":"./assets/imgs/kosmo2.png",
-                            "text": "old build - home"
                         }
                     ]
                 }
