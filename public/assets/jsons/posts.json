@@ -33,52 +33,6 @@
         ],
         "projects": [
             {
-                "id": "semantic_search_project",
-                "projectOrigin": "Personal project",
-                "title": "Semantic searches on audio transcripts",
-                "description": "Script to create & store audio transcripts in vector db",
-                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
-                "postTextParagraphs": [
-                    "A project to perform semantic search on large volumes of audio transcripts.",
-                    "It first gather audio files using yt-dlp, then create transcriptions via Whisper.cpp.",
-                    "Then the transcriptions chunks are stored in a sql db, which will be used to create embeddings.",
-                    "Finally, those embeddings will be stored in a vector DB"
-                ],
-                "postTextKeyPoints":{
-                    "text":"Key points : ", 
-                    "points":[
-                        {"id":1,"text":"Gather files via yt-dlp from a single flux url"},
-                        {"id":2,"text":"Transcriptions generated locally, no API used"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Github repo","link": "https://github.com/quentinvespero/podcast_transcription"}
-                ]
-            },
-            {
-                "id": "portfolio_project",
-                "projectOrigin": "Professional project",
-                "title": "Portfolio Website / Reusable website structure",
-                "description": "This current website.",
-                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
-                "postTextParagraphs": [
-                    "When I built this website, I envisioned it as a kind of template for a website structure that could be used for many different projects.", 
-                    "This is a 1.0 version, and I'm planning to add new features along the way."
-                ],
-                "postTextKeyPoints":{
-                    "text":"Key features : ", 
-                    "points":[
-                        {"id":1,"text":"Reusable structure"},
-                        {"id":2,"text":"Can be fed by a json file or a backend server for the app's text / projects elements"},
-                        {"id":3,"text":"Ready to be connected to a backend"},
-                        {"id":4,"text":"Use of Suspense, Fallback, ErrorBoundaries, react-router and framer-motion"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Github repo","link": "https://github.com/QuentinA00/quentina00.github.io"}
-                ]
-            },
-            {
                 "id": "kosmo_project",
                 "projectOrigin": "Personal project",
                 "title": "Kosmo Project",
@@ -117,6 +71,52 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "semantic_search_project",
+                "projectOrigin": "Personal project",
+                "title": "Semantic searches on audio transcripts",
+                "description": "Script to create & store audio transcripts in vector db",
+                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "postTextParagraphs": [
+                    "A project to perform semantic search on large volumes of audio transcripts.",
+                    "It first gather audio files using yt-dlp, then create transcriptions via Whisper.cpp.",
+                    "Then the transcriptions chunks are stored in a sql db, which will be used to create embeddings.",
+                    "Finally, those embeddings will be stored in a vector DB"
+                ],
+                "postTextKeyPoints":{
+                    "text":"Key points : ",
+                    "points":[
+                        {"id":1,"text":"Gather files via yt-dlp from a single flux url"},
+                        {"id":2,"text":"Transcriptions generated locally, no API used"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Github repo","link": "https://github.com/quentinvespero/podcast_transcription"}
+                ]
+            },
+            {
+                "id": "portfolio_project",
+                "projectOrigin": "Professional project",
+                "title": "Portfolio Website / Reusable website structure",
+                "description": "This current website.",
+                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
+                "postTextParagraphs": [
+                    "When I built this website, I envisioned it as a kind of template for a website structure that could be used for many different projects.",
+                    "This is a 1.0 version, and I'm planning to add new features along the way."
+                ],
+                "postTextKeyPoints":{
+                    "text":"Key features : ",
+                    "points":[
+                        {"id":1,"text":"Reusable structure"},
+                        {"id":2,"text":"Can be fed by a json file or a backend server for the app's text / projects elements"},
+                        {"id":3,"text":"Ready to be connected to a backend"},
+                        {"id":4,"text":"Use of Suspense, Fallback, ErrorBoundaries, react-router and framer-motion"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Github repo","link": "https://github.com/QuentinA00/quentina00.github.io"}
+                ]
             },
             {
                 "id": "temporo",
@@ -165,7 +165,7 @@
                     "Timers can be customized with names, colors, icons, and categories. Progress can be monitored over time using a completion grid."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Key features : ", 
+                    "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Timers of different types"},
                         {"id":2,"text":"Manage, sort and filter timers with categories, colors, name and more"},
@@ -190,7 +190,7 @@
                     "But.. this feature isn't widely available yet, so I added the option to enter an OpenAi API key and use gpt4o-mini instead."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Key features : ", 
+                    "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Summaries using LLM"},
                         {"id":2,"text":"Flexible application structure"},
@@ -225,13 +225,13 @@
                 "description": "React web app to find coaches by topics",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_scss", "tag_swiper"],
                 "postTextParagraphs": [
-                    "It aims to be a pretty simple web app that needs to be fed with a JSON file containing coaches in different topics.", 
+                    "It aims to be a pretty simple web app that needs to be fed with a JSON file containing coaches in different topics.",
                     "It allows clients to find the perfect coach for their needs.",
                     "Also it was my first React application",
                     "Client : Amazon"
                 ],
                 "postTextKeyPoints":{
-                    "text":"Key features : ", 
+                    "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Fed with a JSON file"},
                         {"id":2,"text":"Filter items by topics"}
@@ -300,51 +300,6 @@
         ],
         "projects": [
             {
-                "id": "semantic_search_project",
-                "projectOrigin": "Projet personnel",
-                "title": "Recherches sémantiques sur transcriptions audio",
-                "description": "Script pour générer transcriptions audio dans db vectorielle",
-                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
-                "postTextParagraphs": [
-                    "Un projet pour effectuer des recherches sémantiques sur de gros volumes de transcriptions audio à partir de modèle d'IA en local.",
-                    "Il collecte d'abord les fichiers audio en utilisant yt-dlp, puis génère des transcriptions à partir de ces fichiers via Whisper.cpp.",
-                    "Ensuite, les transcriptions sont stockés dans une base de données SQL, qui sera utilisée pour créer des embeddings.",
-                    "Enfin, ces embeddings seront stockés dans une base de données vectorielle",
-                    "Le but final est de pouvoir effectuer des recherches sémantique à partir de ces données"
-                ],
-                "postTextKeyPoints":{
-                    "text":"Points clés : ", 
-                    "points":[
-                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
-                        {"id":2,"text":"Transcriptions générées à partir de modèle d'IA en local, pas d'API externe utilisée"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Repo Github","link": "https://github.com/quentinvespero/podcast_transcription"}
-                ]
-            },
-            {
-                "id": "portfolio_project",
-                "projectOrigin": "Projet professionnel",
-                "title": "Site Portfolio / Structure de site web réutilisable",
-                "description": "(Ce site web)",
-                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
-                "postTextParagraphs": [
-                    "Quand j'ai créé ce site web, je l'ai envisagé comme une sorte de template d'application React que je pourrais utiliser pour différents projets.", 
-                    "C'est une version 1.0, et j'ai prévu d'ajouter de nouvelles features au fil du temps."
-                ],
-                "postTextKeyPoints":{
-                    "text":"Fonctions clés : ", 
-                    "points":[
-                        {"id":1,"text":"Structure réutilisable"},
-                        {"id":2,"text":"La structure du site peut facilement être créée en alimentant l'app avec un fichier json ou un serveur backend"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Repo Github","link": "https://github.com/QuentinA00/quentina00.github.io"}
-                ]
-            },
-            {
                 "id": "kosmo_project",
                 "projectOrigin": "Projet personnel",
                 "title": "Projet Kosmo",
@@ -355,7 +310,7 @@
                     "Je me sentais frustré de l'absence de certaines fonctions qui me semblent importante dans X/Twitter, alors j'ai décidé de construire quelque chose qui m'appartient."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Fonctions clés : ", 
+                    "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Système d'upvote/downvote"},
                         {"id":2,"text":"création de communautés"},
@@ -383,6 +338,51 @@
                         }
                     ]
                 }
+            },
+            {
+                "id": "semantic_search_project",
+                "projectOrigin": "Projet personnel",
+                "title": "Recherches sémantiques sur transcriptions audio",
+                "description": "Script pour générer transcriptions audio dans db vectorielle",
+                "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
+                "postTextParagraphs": [
+                    "Un projet pour effectuer des recherches sémantiques sur de gros volumes de transcriptions audio à partir de modèle d'IA en local.",
+                    "Il collecte d'abord les fichiers audio en utilisant yt-dlp, puis génère des transcriptions à partir de ces fichiers via Whisper.cpp.",
+                    "Ensuite, les transcriptions sont stockés dans une base de données SQL, qui sera utilisée pour créer des embeddings.",
+                    "Enfin, ces embeddings seront stockés dans une base de données vectorielle",
+                    "Le but final est de pouvoir effectuer des recherches sémantique à partir de ces données"
+                ],
+                "postTextKeyPoints":{
+                    "text":"Points clés : ",
+                    "points":[
+                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
+                        {"id":2,"text":"Transcriptions générées à partir de modèle d'IA en local, pas d'API externe utilisée"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Repo Github","link": "https://github.com/quentinvespero/podcast_transcription"}
+                ]
+            },
+            {
+                "id": "portfolio_project",
+                "projectOrigin": "Projet professionnel",
+                "title": "Site Portfolio / Structure de site web réutilisable",
+                "description": "(Ce site web)",
+                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
+                "postTextParagraphs": [
+                    "Quand j'ai créé ce site web, je l'ai envisagé comme une sorte de template d'application React que je pourrais utiliser pour différents projets.",
+                    "C'est une version 1.0, et j'ai prévu d'ajouter de nouvelles features au fil du temps."
+                ],
+                "postTextKeyPoints":{
+                    "text":"Fonctions clés : ",
+                    "points":[
+                        {"id":1,"text":"Structure réutilisable"},
+                        {"id":2,"text":"La structure du site peut facilement être créée en alimentant l'app avec un fichier json ou un serveur backend"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Repo Github","link": "https://github.com/QuentinA00/quentina00.github.io"}
+                ]
             },
             {
                 "id": "temporo",
@@ -431,7 +431,7 @@
                     "Les timers peuvent être personnalisés avec des noms, des couleurs, des icônes et des catégories. Les progrès peuvent être suivis via une grille de completion."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Fonctions clés : ", 
+                    "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Gérer, trier et filtrer les minuteurs avec des catégories, des couleurs, des noms et plus encore"},
                         {"id":2,"text":"Grille de completion pour suivre les progrès dans le temps"},
@@ -457,7 +457,7 @@
                     "Du coup j'ai ajouté l'option d'entrer une clé API OpenAi à la place, même si ce n'est pas idéal à mes yeux."
                 ],
                 "postTextKeyPoints":{
-                    "text":"Fonctions clés : ", 
+                    "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Résumér page web via LLM"},
                         {"id":2,"text":"Structure d'application flexible"},
@@ -492,13 +492,13 @@
                 "description": "Application web React pour trouver des coachs par sujets",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_scss", "tag_swiper"],
                 "postTextParagraphs": [
-                    "Projet demandé par Amazon.", 
-                    "Elle vise à être une application web assez simple qui doit être alimentée par un fichier JSON contenant des coachs dans différents sujets.", 
+                    "Projet demandé par Amazon.",
+                    "Elle vise à être une application web assez simple qui doit être alimentée par un fichier JSON contenant des coachs dans différents sujets.",
                     "Elle permet aux clients de trouver les coachs avec la fonction de filtre.",
                     "C'était aussi ma première application React"
                 ],
                 "postTextKeyPoints":{
-                    "text":"Fonctions clés : ", 
+                    "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Alimentée par un fichier JSON"},
                         {"id":2,"text":"Fonciton de filtre"}
