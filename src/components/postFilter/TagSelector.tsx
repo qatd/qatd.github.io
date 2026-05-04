@@ -5,7 +5,6 @@ import Tag from "../Tag"
 const StyleContainer = styled.div`
     cursor:pointer;
     transition:ease-in-out .1s;
-    border:solid .1rem var(--color3);
     filter:brightness(.99);
 `
 

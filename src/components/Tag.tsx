@@ -11,11 +11,12 @@ const TagGlobalStyle = styled.div`
     padding: .15rem 1rem;
     padding-left: .4rem;
     column-gap: .5rem;
+    border-radius:.2rem;
 
     // style for tag in the home, in presentation
     &.presentation-tag{
         font-size:.9rem;
-        padding:0.3rem 1.25rem;
+        padding:0.2rem .9rem;
         padding-left:.6rem;
 
         & svg{
@@ -36,7 +37,7 @@ const TagGlobalStyle = styled.div`
     
     // style for tag inside the postFilter component
     &.postFilter-tag{
-        background:var(--color1);
+        background:var(--color3);
         color:var(--color2);
         &:hover{
             & svg{
