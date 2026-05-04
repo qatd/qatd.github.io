@@ -1,18 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
-export const styleVariables = {
-    color1: '#484848',
-    color2: '#f1f1f1',
-    color3_dark: '#f1f1f110',
-    color3_light: '#48484810'
-}
-
 export const GlobalStyle = createGlobalStyle`
     /* ─── CSS variables ─── */
     :root {
-        --color1: #484848;
+        --color1: #363636;
         --color2: #f1f1f1;
-        --color3: #f1f1f110;
+        --color3: #f1f1f1ac;
 
         --border1: .02rem solid var(--color2);
         --border2: .05rem solid var(--color2);
@@ -32,15 +25,15 @@ export const GlobalStyle = createGlobalStyle`
     @media (prefers-color-scheme: light) {
         :root {
             --color1: #f1f1f1;
-            --color2: #484848;
-            --color3: #48484810;
+            --color2: #363636;
+            --color3: #36363610;
         }
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --color1: #2d2d2d;
-            --color2: #f1f1f1;
+            --color1: #1d1d1d;
+            --color2: #d1d1d1;
             --color3: #f1f1f110;
         }
     }
@@ -82,10 +75,6 @@ export const GlobalStyle = createGlobalStyle`
     h2 { font-size: 2rem; margin: 0; }
     h3 { font-size: 1.5rem; margin: 0; }
     h4 { font-size: 1.2rem; margin: 0; }
-
-    iframe {
-        border-radius: .7rem;
-    }
 
     button {
         appearance: none;
