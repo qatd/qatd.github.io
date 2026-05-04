@@ -5,8 +5,7 @@
             {"id": "language", "icon":"globe.svg", "link":""}
         ],
         "pages":[
-            { "id": "", "text": "About me" },
-            { "id": "projects", "text": "Projects" },
+            { "id": "", "text": "Portfolio" },
             { "id": "contact", "text": "Contact" }
         ],
         "contact":{
@@ -19,6 +18,7 @@
             "image":"flashcode.png"
         },
         "projects":{
+            "title":"Projects",
             "filter":"Filter the projects by tags :"
         },
         "bottomSection": {
@@ -49,8 +49,7 @@
             {"id": "language", "icon":"globe.svg", "link":""}
         ],
         "pages":[
-            { "id": "", "text": "Bio" },
-            { "id": "projects", "text": "Projets" },
+            { "id": "", "text": "Portfolio" },
             { "id": "contact", "text": "Contact" }
         ],
         "contact":{
@@ -63,6 +62,7 @@
             "image":"flashcode.png"
         },
         "projects":{
+            "title":"Projets",
             "filter":"Filtrer les projets par tags :"
         },
         "bottomSection": {

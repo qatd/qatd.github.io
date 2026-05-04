@@ -26,6 +26,7 @@ export interface AppTextInterface {
 
     // text for projects page
     projects :{
+        title:string
         filter:string
     }
 

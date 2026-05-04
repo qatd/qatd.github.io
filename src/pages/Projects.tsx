@@ -8,6 +8,13 @@ import styled from "styled-components"
 import Post from "../components/post/Post"
 import PostFilter from "../components/postFilter/PostFilter"
 import { usePost } from "../contexts/usePost"
+import { useLanguage } from "../contexts/useLanguage"
+
+const StyleWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+`
 
 const StyleContainer = styled.div`
     display: flex;
@@ -43,9 +50,12 @@ const Projects = () => {
     // below 1600px screen width
     const isOnDesktopMediumScreen = useMediaQuery({maxWidth:screen_desktop_medium})
 
-    // get the posts from the context
-    const {getProjectPosts} = usePost()
+    const {appText} = useLanguage()
 
+    // get the posts from the context
+    const {getProjectPosts, getPresentationPost} = usePost()
+
+    const presentationPosts = getPresentationPost()
     const projectsPosts = getProjectPosts()
 
     // tags selected in PostFilterComponent
@@ -60,31 +70,41 @@ const Projects = () => {
     },[projectsPosts,selectedTags])
 
     return (
-        <StyleContainer className={`projects ${isOnDesktopSmallScreen ? 'projects-smallerScreen' : ''}`}>
-            
-            <div className={`projectItems ${isOnDesktopMediumScreen ? 'projectItems-mediumScreen' : ''}`}>
-                <AnimatePresence mode='sync'>
-                    {filteredPosts.map((projectData, index) => (
-                        <motion.div
-                            key={projectData.id}
-                            variants={postItem}
-                            initial="initial"
-                            animate="animate"
-                            exit="exit"
-                            custom={index}
-                            layout
-                        >
-                            <Post
-                                postData={projectData}
-                                variantType='project'
-                            />
-                        </motion.div>
-                    ))}
-                </AnimatePresence>
+        <StyleWrapper>
+            <div className="bio">
+                {presentationPosts.map(post => (
+                    <Post key={post.id} postData={post} variantType='presentation' />
+                ))}
             </div>
 
-            <PostFilter projectPosts={projectsPosts} setSelectedTags={setSelectedTags} selectedTags={selectedTags}/>
-        </StyleContainer>
+            <h2 style={{paddingTop: '2rem'}}>{appText.projects.title}</h2>
+
+            <StyleContainer className={`projects ${isOnDesktopSmallScreen ? 'projects-smallerScreen' : ''}`}>
+
+                <div className={`projectItems ${isOnDesktopMediumScreen ? 'projectItems-mediumScreen' : ''}`}>
+                    <AnimatePresence mode='sync'>
+                        {filteredPosts.map((projectData, index) => (
+                            <motion.div
+                                key={projectData.id}
+                                variants={postItem}
+                                initial="initial"
+                                animate="animate"
+                                exit="exit"
+                                custom={index}
+                                layout
+                            >
+                                <Post
+                                    postData={projectData}
+                                    variantType='project'
+                                />
+                            </motion.div>
+                        ))}
+                    </AnimatePresence>
+                </div>
+
+                <PostFilter projectPosts={projectsPosts} setSelectedTags={setSelectedTags} selectedTags={selectedTags}/>
+            </StyleContainer>
+        </StyleWrapper>
     )
 }
 
