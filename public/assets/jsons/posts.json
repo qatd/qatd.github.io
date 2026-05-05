@@ -62,8 +62,8 @@
                 "description": "Social network mixing Reddit and X/Twitter features",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
-                    "The idea behind this project is to create a social network that mixes Reddit features — voting system, communities — with a global feed similar to X/Twitter.",
-                    "I felt frustrated by the absence of some features that seem important to me in X/Twitter, so I decided to build something of my own."
+                    "A social network that mixes Reddit features like voting system, communities, with a global feed, similar to X/Twitter.",
+                    "Uses a postgreSQL database, authentication with Better-auth, using a magic link email."
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
@@ -364,8 +364,8 @@
                 "description": "Reseau social mixant features de Reddit et X/Twitter",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
-                    "L'idée de ce projet est de créer un réseau social qui mix des features de Reddit, avec le système de vote, les communautés, et en même temps un feed global type X/Twitter",
-                    "Je me sentais frustré de l'absence de certaines fonctions qui me semblent importante dans X/Twitter, alors j'ai décidé de construire quelque chose qui m'appartient."
+                    "Un réseau social qui utilise des fonctionnalités de Reddit comme le système de vote et les communautés, avec un feed global style X/Twitter.",
+                    "Utilise une base de données PostgreSQL, une authentification avec Better-auth via magic link par email."
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
