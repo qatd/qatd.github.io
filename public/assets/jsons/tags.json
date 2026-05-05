@@ -17,6 +17,9 @@
     { "id": "tag_errorBoundaries", "text_en": "Error Boundaries", "text_fr": "Error Boundaries", "category": "frontend" },
     { "id": "tag_suspense", "text_en": "Suspense / Fallback", "text_fr": "Suspense / Fallback", "category": "frontend" },
     { "id": "tag_vite", "text_en": "Vite", "text_fr": "Vite", "category": "frontend" },
+    { "id": "tag_threeJs", "text_en": "Three.js", "text_fr": "Three.js", "category": "frontend" },
+    { "id": "tag_rapier", "text_en": "Rapier", "text_fr": "Rapier", "category": "frontend" },
+    { "id": "tag_webgl", "text_en": "WebGL", "text_fr": "WebGL", "category": "frontend" },
     
     { "id": "tag_pytorch", "text_en": "PyTorch (beginner)", "text_fr": "PyTorch (débutant)", "category": "backend_data" },
     { "id": "tag_node", "text_en": "Node.js", "text_fr": "Node.js", "category": "backend_data" },
@@ -44,8 +47,10 @@
     { "id": "tag_linux", "text_en": "Linux", "text_fr": "Linux", "category": "devops_tools" },
     { "id": "tag_debian", "text_en": "Debian", "text_fr": "Debian", "category": "devops_tools" },
     { "id": "tag_proxmox", "text_en": "Proxmox", "text_fr": "Proxmox", "category": "devops_tools" },
+    { "id": "tag_abletonLive", "text_en": "Ableton Live", "text_fr": "Ableton Live", "category": "devops_tools" },
 
     { "id": "tag_chromeExtension", "text_en": "Chrome extension", "text_fr": "Extension Chrome", "category": "project_type" },
     { "id": "tag_ios", "text_en": "iOS app", "text_fr": "Application iOS", "category": "project_type" },
-    { "id": "tag_vibeCoding", "text_en": "Vibe-Coding", "text_fr": "Vibe-Coding", "category": "project_type" }
+    { "id": "tag_vibeCoding", "text_en": "Vibe-Coding", "text_fr": "Vibe-Coding", "category": "project_type" },
+    { "id": "tag_browserGame", "text_en": "Browser game", "text_fr": "Jeu web", "category": "project_type" }
 ]
