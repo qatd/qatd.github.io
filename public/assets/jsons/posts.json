@@ -63,7 +63,7 @@
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
                     "A social network that mixes Reddit features like voting system, communities, with a global feed, similar to X/Twitter.",
-                    "Uses a postgreSQL database, authentication with Better-auth, using a magic link email."
+                    "Uses a postgreSQL database with Prisma and Better-auth for the authentication."
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
@@ -137,16 +137,15 @@
                 "description": "This current website.",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
                 "postTextParagraphs": [
-                    "When I built this website, I envisioned it as a kind of template for a website structure that could be used for many different projects.",
-                    "This is a 1.0 version, and I'm planning to add new features along the way."
+                    "A simple portfolio webiste.",
+                    "Deployment on github pages, populated with a json"
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Reusable structure"},
-                        {"id":2,"text":"Can be fed by a json file or a backend server for the app's text / projects elements"},
-                        {"id":3,"text":"Ready to be connected to a backend"},
-                        {"id":4,"text":"Use of Suspense, Fallback, ErrorBoundaries, react-router and framer-motion"}
+                        {"id":2,"text":"Fed with a JSON file for both text and app's structure"},
+                        {"id":4,"text":"Use of Fallback, ErrorBoundaries, react-router and framer-motion"}
                     ]
                 },
                 "postsLinks": [
@@ -158,7 +157,7 @@
                 "projectOrigin": "Personal project",
                 "title": "Temporo",
                 "description": "A simple and flexible app to manage timers and habits",
-                "tagsId": ["tag_ios", "tag_vibeCoding", "tag_cursor", "tag_figma", "tag_appStore"],
+                "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {
                     "images":[
                         {
@@ -194,15 +193,14 @@
                     ]
                 },
                 "postTextParagraphs": [
-                    "(This project was a sort of experience, I wanted to see if I could create a whole iOS app and post it to the appstore without writing a single line of code.)",
-                    "It supports setting timers for cooking, creating countdowns for goals and events, and tracking workout sessions.",
-                    "It is designed to be intuitive and flexible.",
-                    "Timers can be customized with names, colors, icons, and categories. Progress can be monitored over time using a completion grid."
+                    "An app to manage, create and organise timers and habits",
+                    "Designed to be intuitive and flexible.",
+                    "Timers can be customized with names, colors, icons, and categories. Progress can be monitored over time via a completion grid."
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
                     "points":[
-                        {"id":1,"text":"Timers of different types"},
+                        {"id":1,"text":"Timers of different types : stopwatch, timer and countdown"},
                         {"id":2,"text":"Manage, sort and filter timers with categories, colors, name and more"},
                         {"id":3,"text":"Completion grid to track progress over time"}
                     ]
@@ -220,16 +218,15 @@
                 "description": "A Chrome extension to get summaries and informations about websites. (In progress)",
                 "tagsId": ["tag_chromeExtension", "tag_ts", "tag_llmIntegration", "tag_react", "tag_vite", "tag_styledComponents", "tag_reactContext", "tag_reactRouter", "tag_suspense", "tag_errorBoundaries", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "It aims to be a simple Chrome extension that provides summaries and explanations using the context of the current webpage.",
-                    "Initially, the idea behind this extension was to use Chrome's built-in Gemini Nano LLM, relying solely on a local LLM for inference within the app.",
-                    "But.. this feature isn't widely available yet, so I added the option to enter an OpenAi API key and use gpt4o-mini instead."
+                    "Chrome extension that provides summaries and explanations using the context of the current webpage.",
+                    "Initially built for Chrome's built-in Gemini Nano LLM, relying solely on local LLM for inference"
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Summaries using LLM"},
                         {"id":2,"text":"Flexible application structure"},
-                        {"id":3,"text":"Sync the settings among the Chrome instances for a given Google account"}
+                        {"id":3,"text":"Settings sync"}
                     ]
                 },
                 "postsLinks": [
@@ -260,16 +257,15 @@
                 "description": "React web app to find coaches by topics",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_scss", "tag_swiper"],
                 "postTextParagraphs": [
-                    "It aims to be a pretty simple web app that needs to be fed with a JSON file containing coaches in different topics.",
-                    "It allows clients to find the perfect coach for their needs.",
-                    "Also it was my first React application",
-                    "Client : Amazon"
+                    "Project for Amazon.",
+                    "Simple web app fed with a JSON file.",
+                    "Allows clients to find coaches with the filter feature."
                 ],
                 "postTextKeyPoints":{
                     "text":"Key features : ",
                     "points":[
                         {"id":1,"text":"Fed with a JSON file"},
-                        {"id":2,"text":"Filter items by topics"}
+                        {"id":2,"text":"Filter feature"}
                     ]
                 },
                 "postsLinks": [
@@ -365,7 +361,7 @@
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
                     "Un réseau social qui utilise des fonctionnalités de Reddit comme le système de vote et les communautés, avec un feed global style X/Twitter.",
-                    "Utilise une base de données PostgreSQL, une authentification avec Better-auth via magic link par email."
+                    "Base de données PostgreSQL avec Prisma et Better-auth pour l'authentification."
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
@@ -439,14 +435,15 @@
                 "description": "(Ce site web)",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
                 "postTextParagraphs": [
-                    "Quand j'ai créé ce site web, je l'ai envisagé comme une sorte de template d'application React que je pourrais utiliser pour différents projets.",
-                    "C'est une version 1.0, et j'ai prévu d'ajouter de nouvelles features au fil du temps."
+                    "Site portfolio.",
+                    "Déployé sur Github Pages, alimenté par un fichier json"
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Structure réutilisable"},
-                        {"id":2,"text":"La structure du site peut facilement être créée en alimentant l'app avec un fichier json ou un serveur backend"}
+                        {"id":2,"text":"Alimenté par un fichier JSON pour le texte et la structure de l'app"},
+                        {"id":4,"text":"Utilisation de Fallback, ErrorBoundaries, react-router et framer-motion"}
                     ]
                 },
                 "postsLinks": [
@@ -458,7 +455,7 @@
                 "projectOrigin": "Projet personnel",
                 "title": "Temporo",
                 "description": "Une application simple et flexible pour gérer les minuteurs et les habitudes",
-                "tagsId": ["tag_ios", "tag_vibeCoding", "tag_cursor", "tag_figma", "tag_appStore"],
+                "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {
                     "images":[
                         {
@@ -494,17 +491,16 @@
                     ]
                 },
                 "postTextParagraphs": [
-                    "(Ce projet était une sorte d'expérience, je voulais voir si je pouvais créer une application iOS complète et la publier sur l'App Store sans écrire une seule ligne de code.)",
-                    "Le but de l'application est de pouvoir manager, organiser, classer ses timers, chronomètres et compte à rebours.",
-                    "Il est pensé pour être simple et flexible.",
+                    "Une application pour gérer, créer et organiser ses timers et habitudes",
+                    "Pensé pour être intuitive et flexible.",
                     "Les timers peuvent être personnalisés avec des noms, des couleurs, des icônes et des catégories. Les progrès peuvent être suivis via une grille de completion."
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
                     "points":[
-                        {"id":1,"text":"Gérer, trier et filtrer les minuteurs avec des catégories, des couleurs, des noms et plus encore"},
-                        {"id":2,"text":"Grille de completion pour suivre les progrès dans le temps"},
-                        {"id":3,"text":"Possibilité d'importer/exporter les datas de l'app en format JSON"}
+                        {"id":1,"text":"Timers de différents types : chronomètre, minuteur et compte à rebours"},
+                        {"id":2,"text":"Gérer, trier et filtrer les minuteurs avec des catégories, des couleurs, des noms..."},
+                        {"id":3,"text":"Grille de completion pour suivre les progrès dans le temps"}
                     ]
                 },
                 "postsLinks": [
@@ -520,17 +516,15 @@
                 "description": "Une extension Chrome pour résumer et fact-checker des infos de pages web. (En cours)",
                 "tagsId": ["tag_chromeExtension", "tag_ts", "tag_llmIntegration", "tag_react", "tag_vite", "tag_styledComponents", "tag_reactContext", "tag_reactRouter", "tag_suspense", "tag_errorBoundaries", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "Elle vise à être une extension Chrome simple qui fournit des résumés et des explications/fact-check en utilisant le contexte de la page web actuelle.",
-                    "Initialement, l'idée derrière cette extension était d'utiliser le LLM Gemini Nano intégré de Chrome, pour s'appuyer sur un LLM local pour l'inférence dans l'application.",
-                    "Mais... au moment de faire l'application, ce n'était pas clair si l'intégration et l'API de gemini nano allaient être déployés en dehors des version dev/betas de Chrome",
-                    "Du coup j'ai ajouté l'option d'entrer une clé API OpenAi à la place, même si ce n'est pas idéal à mes yeux."
+                    "Extension Chrome pour résumer et obtenir des infos avec le contexte de la page web.",
+                    "Initialement conçue pour Gemini Nano intégré de Chrome, pour utiliser un LLM local pour l'inférence au lieu d'une API externe"
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
                     "points":[
-                        {"id":1,"text":"Résumér page web via LLM"},
+                        {"id":1,"text":"Résumés via LLM"},
                         {"id":2,"text":"Structure d'application flexible"},
-                        {"id":3,"text":"Synchronisation des paramètres de l'extension avec le compte Google connecté à Chrome"}
+                        {"id":3,"text":"Synchronisation des paramètres"}
                     ]
                 },
                 "postsLinks": [
@@ -561,16 +555,15 @@
                 "description": "Application web React pour trouver des coachs par sujets",
                 "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_scss", "tag_swiper"],
                 "postTextParagraphs": [
-                    "Projet demandé par Amazon.",
-                    "Elle vise à être une application web assez simple qui doit être alimentée par un fichier JSON contenant des coachs dans différents sujets.",
-                    "Elle permet aux clients de trouver les coachs avec la fonction de filtre.",
-                    "C'était aussi ma première application React"
+                    "Projet pour Amazon.",
+                    "Application web assez simple alimentée par un fichier JSON.",
+                    "Permet aux clients de trouver les coachs avec la fonction de filtre."
                 ],
                 "postTextKeyPoints":{
                     "text":"Fonctions clés : ",
                     "points":[
                         {"id":1,"text":"Alimentée par un fichier JSON"},
-                        {"id":2,"text":"Fonciton de filtre"}
+                        {"id":2,"text":"Fonction de filtre"}
                     ]
                 },
                 "postsLinks": [
