@@ -1,6 +1,6 @@
 ## Portfolio Website
 
-Simple personal portfolio deployed at [quentina00.github.io](https://quentina00.github.io/)
+Personal portfolio, deployed at [qatd.github.io](https://qatd.github.io/)
 
 **Stack:** React 18 · TypeScript · Vite · Styled Components · Framer Motion · React Query
 
