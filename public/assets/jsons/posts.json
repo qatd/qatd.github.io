@@ -52,7 +52,7 @@
                     ]
                 },
                 "postsLinks": [
-                    {"linkName": "Github repo","link": "https://github.com/qatd/podcast_transcription"}
+                    {"linkName": "Github repo","link": "https://github.com/qatd/voxearch"}
                 ]
             },
             {
@@ -350,7 +350,7 @@
                     ]
                 },
                 "postsLinks": [
-                    {"linkName": "Repo Github","link": "https://github.com/qatd/podcast_transcription"}
+                    {"linkName": "Repo Github","link": "https://github.com/qatd/voxearch"}
                 ]
             },
             {
