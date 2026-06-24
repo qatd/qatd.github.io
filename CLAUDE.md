@@ -5,11 +5,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev       # Start dev server
-npm run build     # Type-check + build (tsc -b && vite build --base=./)
-npm run lint      # ESLint
-npm run preview   # Preview production build locally
-npm run deploy    # Build + deploy to GitHub Pages (gh-pages)
+pnpm dev       # Start dev server
+pnpm build     # Type-check + build (tsc -b && vite build --base=./)
+pnpm lint      # ESLint
+pnpm preview   # Preview production build locally
+pnpm deploy    # Build + deploy to GitHub Pages (gh-pages)
 ```
 
 > No test runner is configured in this project.
