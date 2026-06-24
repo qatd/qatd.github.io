@@ -17,12 +17,6 @@ const StyleContainer = styled.div<StyleContainerProps>`
 
     border-radius:1rem;
 
-    .comment{
-        font-size:.8rem;
-        align-self:center;
-        filter:brightness(.5);
-    }
-
     ${props => props.$isOnMobileScreen && `
         padding:1.5rem;
         font-size:1rem;
@@ -32,11 +26,10 @@ const StyleContainer = styled.div<StyleContainerProps>`
 
 type ContactLinksProps = {
     contactLinks: contactLinkInterface[]
-    contactText: string
     isOnMobileScreen: boolean
 }
 
-const ContactLinks: React.FC<ContactLinksProps> = ({ contactLinks, isOnMobileScreen, contactText }) => {
+const ContactLinks: React.FC<ContactLinksProps> = ({ contactLinks, isOnMobileScreen }) => {
     return (
         <StyleContainer $isOnMobileScreen={isOnMobileScreen}>
             {contactLinks.map((element) => (
@@ -49,7 +42,6 @@ const ContactLinks: React.FC<ContactLinksProps> = ({ contactLinks, isOnMobileScr
                     isOnMobileScreen={isOnMobileScreen}
                 />
             ))}
-            <p className='comment'>{contactText}</p>
         </StyleContainer>
     )
 }
