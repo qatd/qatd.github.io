@@ -13,9 +13,8 @@
             "heading":"You can retrieve me / contact me there :",
             "contactLinks":[
                 {"id":"mail", "text":"Mail :", "linkText":"quentinartaud.work@gmail.com", "link":"mailto:quentinartaud.work@gmail.com", "icon":"mail.svg"},
-                {"id":"github", "text":"Github :", "linkText":"github.com/quentinvespero", "link":"https://github.com/quentinvespero", "icon":"github.svg"}
+                {"id":"github", "text":"Github :", "linkText":"github.com/qatd", "link":"https://github.com/qatd", "icon":"github.svg"}
             ],
-            "text":"(Quentin Vespero is my online pseudo)",
             "image":"flashcode.png"
         },
         "projects":{
@@ -26,7 +25,7 @@
             "mail":"",
             "socialLinks":[
                 {"id":"mail","icon":"mail.svg","link":"mailto:quentinartaud.work@gmail.com", "description":"Mail : quentinartaud.work@gmail.com"},
-                {"id":"githubPerso","icon":"github.svg","link":"https://github.com/quentinvespero", "description":"Github"},
+                {"id":"githubPerso","icon":"github.svg","link":"https://github.com/qatd", "description":"Github"},
                 {"id":"telegram","icon":"telegram.svg","link":"https://t.me/quenti_n", "description":"Telegram"},
                 {"id":"tiktok","icon":"tiktok.svg","link":"https://www.tiktok.com/@retrotechnostalgia", "description":"Tiktok"},
                 {"id":"discord","icon":"discord.svg","link":"https://discord.gg/VupWnrGy", "description":"Discord"}
@@ -57,9 +56,8 @@
             "heading":"Vous pouvez me retrouver / me contacter notamment ici :",
             "contactLinks":[
                 {"id":"mail", "text":"Mail :", "linkText":"quentinartaud.work@gmail.com", "link":"mailto:quentinartaud.work@gmail.com", "icon":"mail.svg"},
-                {"id":"github", "text":"Github :", "linkText":"github.com/quentinvespero", "link":"https://github.com/quentinvespero", "icon":"github.svg"}
+                {"id":"github", "text":"Github :", "linkText":"github.com/qatd", "link":"https://github.com/qatd", "icon":"github.svg"}
             ],
-            "text":"(Quentin Vespero est mon pseudo en ligne)",
             "image":"flashcode.png"
         },
         "projects":{
@@ -70,7 +68,7 @@
             "mail":"",
             "socialLinks":[
                 {"id":"mail","icon":"mail.svg","link":"mailto:quentinartaud.work@gmail.com", "description":"Mail : quentinartaud.work@gmail.com"},
-                {"id":"githubPerso","icon":"github.svg","link":"https://github.com/quentinvespero", "description":"Github"},
+                {"id":"githubPerso","icon":"github.svg","link":"https://github.com/qatd", "description":"Github"},
                 {"id":"telegram","icon":"telegram.svg","link":"https://t.me/quenti_n", "description":"Telegram"},
                 {"id":"tiktok","icon":"tiktok.svg","link":"https://www.tiktok.com/@retrotechnostalgia", "description":"Tiktok"},
                 {"id":"discord","text":"discord","icon":"discord.svg","link":"https://discord.gg/VupWnrGy", "description":"Discord"}

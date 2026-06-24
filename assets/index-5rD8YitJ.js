@@ -583,7 +583,7 @@ Error generating stack: `+d.message+`
         flex-shrink: 1;
         font-size:.9rem;
     }
-`,iR=({title:t,description:r})=>M.jsxs(rR,{children:[t&&M.jsx("h3",{children:t}),M.jsx("p",{className:"postTitle-description",children:r})]}),sR=E.lazy(()=>eR(()=>import("./PostMedias-W-ayfltR.js"),[],import.meta.url)),oR=({postData:t,tabletScreen:r})=>{const i=E.useRef(null),o=cE(i,{margin:"500px 0px 500px 0px",amount:0,once:!0});return M.jsxs(M.Fragment,{children:[M.jsxs("div",{className:`postTopSection ${r?"postTopSection-mobile":""}`,children:[M.jsx(iR,{title:t.title,description:t.description}),M.jsx(Ov,{tagsId:t.tagsId,tagVariant:"project"})]}),M.jsxs("div",{ref:i,className:`postContentSection postContentSection-project ${r?"postContentSection-smallerScreen":""}`,children:[M.jsx(E.Suspense,{fallback:M.jsx(uf,{}),children:o&&M.jsx(sR,{medias:t.medias})}),M.jsxs("div",{className:"postContentSection-description",children:[M.jsx(Lv,{textParagraphs:t.postTextParagraphs}),M.jsx("div",{className:"divider3"}),M.jsx(nR,{keypoints:t.postTextKeyPoints?.points,keypointsTitle:t.postTextKeyPoints?.text}),M.jsx(Iv,{links:t.postsLinks,linkTarget:"_blank"})]})]})]})},aR=fe.div`
+`,iR=({title:t,description:r})=>M.jsxs(rR,{children:[t&&M.jsx("h3",{children:t}),M.jsx("p",{className:"postTitle-description",children:r})]}),sR=E.lazy(()=>eR(()=>import("./PostMedias-wHJTwFE2.js"),[],import.meta.url)),oR=({postData:t,tabletScreen:r})=>{const i=E.useRef(null),o=cE(i,{margin:"500px 0px 500px 0px",amount:0,once:!0});return M.jsxs(M.Fragment,{children:[M.jsxs("div",{className:`postTopSection ${r?"postTopSection-mobile":""}`,children:[M.jsx(iR,{title:t.title,description:t.description}),M.jsx(Ov,{tagsId:t.tagsId,tagVariant:"project"})]}),M.jsxs("div",{ref:i,className:`postContentSection postContentSection-project ${r?"postContentSection-smallerScreen":""}`,children:[M.jsx(E.Suspense,{fallback:M.jsx(uf,{}),children:o&&M.jsx(sR,{medias:t.medias})}),M.jsxs("div",{className:"postContentSection-description",children:[M.jsx(Lv,{textParagraphs:t.postTextParagraphs}),M.jsx("div",{className:"divider3"}),M.jsx(nR,{keypoints:t.postTextKeyPoints?.points,keypointsTitle:t.postTextKeyPoints?.text}),M.jsx(Iv,{links:t.postsLinks,linkTarget:"_blank"})]})]})]})},aR=fe.div`
     display: flex;
     max-width: 70rem;
 
@@ -821,18 +821,12 @@ Error generating stack: `+d.message+`
 
     border-radius:1rem;
 
-    .comment{
-        font-size:.8rem;
-        align-self:center;
-        filter:brightness(.5);
-    }
-
     ${t=>t.$isOnMobileScreen&&`
         padding:1.5rem;
         font-size:1rem;
         row-gap:3rem;
     `}
-`,ER=({contactLinks:t,isOnMobileScreen:r,contactText:i})=>M.jsxs(kR,{$isOnMobileScreen:r,children:[t.map(o=>M.jsx(TR,{text:o.text,icon:o.icon,linkText:o.linkText,link:o.link,isOnMobileScreen:r},o.id)),M.jsx("p",{className:"comment",children:i})]}),RR=fe.div`
+`,ER=({contactLinks:t,isOnMobileScreen:r})=>M.jsx(kR,{$isOnMobileScreen:r,children:t.map(i=>M.jsx(TR,{text:i.text,icon:i.icon,linkText:i.linkText,link:i.link,isOnMobileScreen:r},i.id))}),RR=fe.div`
     display: flex;
     flex-direction:column;
     transition:.1s ease-in-out;
@@ -848,7 +842,7 @@ Error generating stack: `+d.message+`
     & > p{
         font-weight:600;
     }
-`,jR=()=>{const t=Ct({maxWidth:xg}),{appText:r}=ur(),i=r.contact;return M.jsx(RR,{className:t?"contact-mobile":"",children:M.jsx(ER,{contactLinks:i.contactLinks,contactText:i.text,isOnMobileScreen:t})})},AR=[{id:"",component:cR},{id:"projects",component:wR},{id:"contact",component:jR}],MR=fe.div`
+`,jR=()=>{const t=Ct({maxWidth:xg}),{appText:r}=ur(),i=r.contact;return M.jsx(RR,{className:t?"contact-mobile":"",children:M.jsx(ER,{contactLinks:i.contactLinks,isOnMobileScreen:t})})},AR=[{id:"",component:cR},{id:"projects",component:wR},{id:"contact",component:jR}],MR=fe.div`
     display: flex;
     flex-direction: column;
     row-gap: 12rem;
