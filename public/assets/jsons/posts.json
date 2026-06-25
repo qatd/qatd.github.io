@@ -53,7 +53,17 @@
                 },
                 "postsLinks": [
                     {"linkName": "Github repo","link": "https://github.com/qatd/voxearch"}
-                ]
+                ],
+                "medias": {
+                    "images":[
+                        {
+                            "id": 1,
+                            "linkPath": "./assets/imgs/voxearch_small.jpeg",
+                            "linkPathHd":"./assets/imgs/voxearch.png",
+                            "text": "Logo"
+                        }
+                    ]
+                }
             },
             {
                 "id": "kosmo_project",
@@ -82,12 +92,18 @@
                     "images":[
                         {
                             "id": 1,
+                            "linkPath": "./assets/imgs/kosmo6.png",
+                            "linkPathHd":"./assets/imgs/kosmo6.png",
+                            "text": "Logo"
+                        },
+                        {
+                            "id": 2,
                             "linkPath": "./assets/imgs/kosmo4_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo4.png",
                             "text": "Landing page"
                         },
                         {
-                            "id": 2,
+                            "id": 3,
                             "linkPath": "./assets/imgs/kosmo5_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo5.png",
                             "text": "Home page"
@@ -351,7 +367,17 @@
                 },
                 "postsLinks": [
                     {"linkName": "Repo Github","link": "https://github.com/qatd/voxearch"}
-                ]
+                ],
+                "medias": {
+                    "images":[
+                        {
+                            "id": 1,
+                            "linkPath": "./assets/imgs/voxearch_small.jpeg",
+                            "linkPathHd":"./assets/imgs/voxearch.png",
+                            "text": "Logo"
+                        }
+                    ]
+                }
             },
             {
                 "id": "kosmo_project",
@@ -380,12 +406,18 @@
                     "images":[
                         {
                             "id": 1,
+                            "linkPath": "./assets/imgs/kosmo6.png",
+                            "linkPathHd":"./assets/imgs/kosmo6.png",
+                            "text": "Logo"
+                        },
+                        {
+                            "id": 2,
                             "linkPath": "./assets/imgs/kosmo4_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo4.png",
                             "text": "Landing page"
                         },
                         {
-                            "id": 2,
+                            "id": 3,
                             "linkPath": "./assets/imgs/kosmo5_small.jpeg",
                             "linkPathHd":"./assets/imgs/kosmo5.png",
                             "text": "Home page"
