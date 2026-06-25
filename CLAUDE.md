@@ -9,14 +9,15 @@ pnpm dev       # Start dev server
 pnpm build     # Type-check + build (tsc -b && vite build --base=./)
 pnpm lint      # ESLint
 pnpm preview   # Preview production build locally
-pnpm deploy    # Build + deploy to GitHub Pages (gh-pages)
 ```
+
+> Deployment is automatic: pushing to `main` triggers the GitHub Actions workflow (`.github/workflows/deploy.yml`), which builds and publishes to GitHub Pages.
 
 > No test runner is configured in this project.
 
 ## Architecture
 
-**Stack:** React 18 + TypeScript (strict) + Vite, deployed to GitHub Pages via `gh-pages`.
+**Stack:** React 18 + TypeScript (strict) + Vite, deployed to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`).
 
 **Routing:** `HashRouter` (required for GitHub Pages static hosting) with routes defined in `appText.json` under the `pages` key.
 
