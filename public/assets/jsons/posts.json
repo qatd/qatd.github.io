@@ -35,9 +35,9 @@
             {
                 "id": "semantic_search_project",
                 "projectOrigin": "Personal project",
-                "title": "Voxearch • Semantic searches on audio transcripts",
+                "title": "Voxearch",
                 "logo": "./assets/imgs/voxearch_small.jpeg",
-                "description": "Tool to create & store audio transcripts in vector db",
+                "description": "Transcribe audio files using local AI models to perform semantic and keyword searches on them",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
                     "A tool to gather, transcribe, and store transcription in both sql and vector db, to perform semantic search on them",
@@ -335,20 +335,20 @@
             {
                 "id": "semantic_search_project",
                 "projectOrigin": "Projet personnel",
-                "title": "Voxearch • Recherches sémantiques sur transcriptions audio",
+                "title": "Voxearch",
                 "logo": "./assets/imgs/voxearch_small.jpeg",
-                "description": "Outil pour générer transcriptions audio dans db vectorielle",
+                "description": "Outil pour transcrire des fichiers audio avec des modèles d'IA locaux pour effectuer des recherches sémantiques et mots-clés",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
-                    "Outil pour récupérer, transcrire et stocker des transcriptions dans base SQL et vectorielle, pour d'effectuer des recherches sémantiques/keywords.",
-                    "Tout est fait en local. Utilisation de modèles locaux pour la transcription et l'embedding.",
-                    "Compatible avec le framework MLX d'Apple. Support Nvidia en cours."
+                    "Outil pour récupérer, transcrire et stocker des transcriptions audio dans des bases SQL et vectorielles, pour ensuite effectuer des recherches sémantiques/mots-clés.",
+                    "Utilisation de modèles IA locaux pour la transcription et l'embedding. Pas d'API externe utilisée",
+                    "Compatible avec le framework MLX d'Apple. Support Cuda (Nvidia) à venir."
                 ],
                 "postTextKeyPoints":{
                     "text":"Points clés : ",
                     "points":[
-                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
-                        {"id":2,"text":"100% local, pas d'API externe utilisée"},
+                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux"},
+                        {"id":2,"text":"100% local, pas d'API externe"},
                         {"id":3,"text":"Compatible avec Apple MLX, support Nvidia bientôt"}
                     ]
                 },
