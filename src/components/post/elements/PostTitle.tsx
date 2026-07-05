@@ -10,6 +10,7 @@ const StyleContainer = styled.div`
         display: flex;
         align-items: center;
         gap: .75rem;
+        min-width: 0;
     }
 
     & .postTitle-logo {
@@ -20,7 +21,8 @@ const StyleContainer = styled.div`
     }
 
     & h3 {
-        flex-shrink: 0;
+        min-width: 0;
+        overflow-wrap: break-word;
     }
 
     & .postTitle-dot{
