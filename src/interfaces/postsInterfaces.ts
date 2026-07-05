@@ -35,6 +35,7 @@ export interface PostInterface {
     id: string
     projectOrigin?: string
     title?:string
+    logo?:string
     description?:string
     tagsId?: string[]
     postTextParagraphs: string[]
