@@ -36,6 +36,7 @@
                 "id": "semantic_search_project",
                 "projectOrigin": "Personal project",
                 "title": "Voxearch • Semantic searches on audio transcripts",
+                "logo": "./assets/imgs/voxearch_small.jpeg",
                 "description": "Tool to create & store audio transcripts in vector db",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
@@ -69,6 +70,7 @@
                 "id": "kosmo_project",
                 "projectOrigin": "Personal project",
                 "title": "Kosmo",
+                "logo": "./assets/imgs/kosmo6.png",
                 "description": "Social network mixing Reddit and X/Twitter features",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
@@ -350,6 +352,7 @@
                 "id": "semantic_search_project",
                 "projectOrigin": "Projet personnel",
                 "title": "Voxearch • Recherches sémantiques sur transcriptions audio",
+                "logo": "./assets/imgs/voxearch_small.jpeg",
                 "description": "Outil pour générer transcriptions audio dans db vectorielle",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
@@ -383,6 +386,7 @@
                 "id": "kosmo_project",
                 "projectOrigin": "Projet personnel",
                 "title": "Kosmo",
+                "logo": "./assets/imgs/kosmo6.png",
                 "description": "Reseau social mixant features de Reddit et X/Twitter",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
