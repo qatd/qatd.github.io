@@ -18,6 +18,7 @@ const StyleContainer = styled.div`
         width: auto;
         object-fit: contain;
         flex-shrink: 0;
+        border-radius: .2rem;
     }
 
     & h3 {
