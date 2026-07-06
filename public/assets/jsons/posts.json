@@ -153,6 +153,7 @@
                 "id": "temporo",
                 "projectOrigin": "Personal project",
                 "title": "Temporo",
+                "logo": "./assets/imgs/temporo_logo_dark.jpg",
                 "description": "A simple and flexible app to manage timers and habits",
                 "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {
@@ -448,6 +449,7 @@
                 "id": "temporo",
                 "projectOrigin": "Projet personnel",
                 "title": "Temporo",
+                "logo": "./assets/imgs/temporo_logo_dark.jpg",
                 "description": "Une application simple et flexible pour gérer les minuteurs et les habitudes",
                 "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {
