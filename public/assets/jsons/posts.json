@@ -4,25 +4,20 @@
             {
                 "id": "presentation",
                 "postTextParagraphs": [
-                    "Full-Stack developer experienced in creating modern, robust, scalable and responsive websites and web applications, with an emphasis on user-experience.",
-                    "I also have a solid background with linux server administration.",
-                    "I love to learn new technologies, and enhance my skills.",
-                    "Here is an overview of my skills, that I update frequently:"
+                    "Full-Stack developer experienced in creating modern websites and web applications, with an emphasis on user-experience.",
+                    "I also have a solid background with linux server administration."
                 ],
                 "tagsId":[
                     "tag_ts",
-                    "tag_python",
                     "tag_react",
                     "tag_next",
                     "tag_node",
-                    "tag_tailwind",
                     "tag_postgre",
-                    "tag_mongo",
+                    "tag_tailwind",
                     "tag_git",
-                    "tag_jupyterNotebook",
-                    "tag_llmIntegration",
+                    "tag_python",
+                    "tag_mongo",
                     "tag_claudeCode",
-                    "tag_ollama",
                     "tag_linux",
                     "tag_proxmox",
                     "tag_figma",
@@ -35,8 +30,9 @@
             {
                 "id": "semantic_search_project",
                 "projectOrigin": "Personal project",
-                "title": "Voxearch • Semantic searches on audio transcripts",
-                "description": "Tool to create & store audio transcripts in vector db",
+                "title": "Voxearch",
+                "logo": "./assets/imgs/voxearch_small.jpeg",
+                "description": "Transcribe audio files using local AI models to perform semantic and keyword searches on them",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
                     "A tool to gather, transcribe, and store transcription in both sql and vector db, to perform semantic search on them",
@@ -53,22 +49,13 @@
                 },
                 "postsLinks": [
                     {"linkName": "Github repo","link": "https://github.com/qatd/voxearch"}
-                ],
-                "medias": {
-                    "images":[
-                        {
-                            "id": 1,
-                            "linkPath": "./assets/imgs/voxearch_small.jpeg",
-                            "linkPathHd":"./assets/imgs/voxearch.png",
-                            "text": "Logo"
-                        }
-                    ]
-                }
+                ]
             },
             {
                 "id": "kosmo_project",
                 "projectOrigin": "Personal project",
                 "title": "Kosmo",
+                "logo": "./assets/imgs/kosmo6.png",
                 "description": "Social network mixing Reddit and X/Twitter features",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
@@ -90,12 +77,6 @@
                 ],
                 "medias": {
                     "images":[
-                        {
-                            "id": 1,
-                            "linkPath": "./assets/imgs/kosmo6.png",
-                            "linkPathHd":"./assets/imgs/kosmo6.png",
-                            "text": "Logo"
-                        },
                         {
                             "id": 2,
                             "linkPath": "./assets/imgs/kosmo4_small.jpeg",
@@ -172,6 +153,7 @@
                 "id": "temporo",
                 "projectOrigin": "Personal project",
                 "title": "Temporo",
+                "logo": "./assets/imgs/temporo_logo_dark.jpg",
                 "description": "A simple and flexible app to manage timers and habits",
                 "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {
@@ -318,25 +300,20 @@
             {
                 "id": "presentation",
                 "postTextParagraphs": [
-                    "Développeur Full-Stack Typescript React/Next, ayant de l'experience dans la création de web application, avec un accent sur l'expérience utilisateur",
-                    "Je travaille aussi sur différents projets avec Python.",
-                    "Ayant initialement un parcours en administration serveur, j'ai une solide expérience avec Linux.",
-                    "J'aime apprendre de nouvelles technologies et améliorer mes compétences."
+                    "Développeur Full-Stack ayant de l'experience dans la création d'application web, avec un accent sur l'expérience utilisateur",
+                    "Ayant un parcours réseau / administration serveur, j'ai aussi un solide background avec Linux."
                 ],
                 "tagsId":[
                     "tag_ts",
-                    "tag_python",
                     "tag_react",
                     "tag_next",
                     "tag_node",
-                    "tag_tailwind",
                     "tag_postgre",
-                    "tag_mongo",
+                    "tag_tailwind",
                     "tag_git",
-                    "tag_jupyterNotebook",
-                    "tag_llmIntegration",
+                    "tag_python",
+                    "tag_mongo",
                     "tag_claudeCode",
-                    "tag_ollama",
                     "tag_linux",
                     "tag_proxmox",
                     "tag_figma",
@@ -349,40 +326,32 @@
             {
                 "id": "semantic_search_project",
                 "projectOrigin": "Projet personnel",
-                "title": "Voxearch • Recherches sémantiques sur transcriptions audio",
-                "description": "Outil pour générer transcriptions audio dans db vectorielle",
+                "title": "Voxearch",
+                "logo": "./assets/imgs/voxearch_small.jpeg",
+                "description": "Outil pour transcrire des fichiers audio avec des modèles d'IA locaux pour effectuer des recherches sémantiques et mots-clés",
                 "tagsId":["tag_python","tag_jupyterNotebook","tag_docker","tag_whisper","tag_qdrant","tag_postgre","tag_ytdlp"],
                 "postTextParagraphs": [
-                    "Outil pour récupérer, transcrire et stocker des transcriptions dans base SQL et vectorielle, pour d'effectuer des recherches sémantiques/keywords.",
-                    "Tout est fait en local. Utilisation de modèles locaux pour la transcription et l'embedding.",
-                    "Compatible avec le framework MLX d'Apple. Support Nvidia en cours."
+                    "Outil pour récupérer, transcrire et stocker des transcriptions audio dans des bases SQL et vectorielles, pour ensuite effectuer des recherches sémantiques/mots-clés.",
+                    "Utilisation de modèles IA locaux pour la transcription et l'embedding. Pas d'API externe utilisée",
+                    "Compatible avec le framework MLX d'Apple. Support Cuda (Nvidia) à venir."
                 ],
                 "postTextKeyPoints":{
                     "text":"Points clés : ",
                     "points":[
-                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux unique"},
-                        {"id":2,"text":"100% local, pas d'API externe utilisée"},
+                        {"id":1,"text":"Collecte de fichiers via yt-dlp depuis une URL de flux"},
+                        {"id":2,"text":"100% local, pas d'API externe"},
                         {"id":3,"text":"Compatible avec Apple MLX, support Nvidia bientôt"}
                     ]
                 },
                 "postsLinks": [
                     {"linkName": "Repo Github","link": "https://github.com/qatd/voxearch"}
-                ],
-                "medias": {
-                    "images":[
-                        {
-                            "id": 1,
-                            "linkPath": "./assets/imgs/voxearch_small.jpeg",
-                            "linkPathHd":"./assets/imgs/voxearch.png",
-                            "text": "Logo"
-                        }
-                    ]
-                }
+                ]
             },
             {
                 "id": "kosmo_project",
                 "projectOrigin": "Projet personnel",
                 "title": "Kosmo",
+                "logo": "./assets/imgs/kosmo6.png",
                 "description": "Reseau social mixant features de Reddit et X/Twitter",
                 "tagsId": ["tag_ts", "tag_react", "tag_next", "tag_postgre", "tag_tailwind","tag_shadcn", "tag_betterauth", "tag_suspense", "tag_errorBoundaries", "tag_prisma", "tag_vercel", "tag_neon"],
                 "postTextParagraphs": [
@@ -404,12 +373,6 @@
                 ],
                 "medias": {
                     "images":[
-                        {
-                            "id": 1,
-                            "linkPath": "./assets/imgs/kosmo6.png",
-                            "linkPathHd":"./assets/imgs/kosmo6.png",
-                            "text": "Logo"
-                        },
                         {
                             "id": 2,
                             "linkPath": "./assets/imgs/kosmo4_small.jpeg",
@@ -486,6 +449,7 @@
                 "id": "temporo",
                 "projectOrigin": "Projet personnel",
                 "title": "Temporo",
+                "logo": "./assets/imgs/temporo_logo_dark.jpg",
                 "description": "Une application simple et flexible pour gérer les minuteurs et les habitudes",
                 "tagsId": ["tag_ios", "tag_figma", "tag_appStore"],
                 "medias": {

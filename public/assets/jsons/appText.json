@@ -48,7 +48,7 @@
             {"id": "language", "icon":"globe.svg", "link":""}
         ],
         "pages":[
-            { "id": "", "text": "Bio" },
+            { "id": "", "text": "À propos" },
             { "id": "projects", "text": "Projets" },
             { "id": "contact", "text": "Contact" }
         ],

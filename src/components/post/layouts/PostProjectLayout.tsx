@@ -23,7 +23,7 @@ const PostProjectLayout: FC<PostProjectLayoutProps> = ({postData, tabletScreen})
     return (
         <>
             <div className={`postTopSection ${tabletScreen ? 'postTopSection-mobile' : ''}`}>
-                <PostTitle title={postData.title} description={postData.description}/>
+                <PostTitle title={postData.title} logo={postData.logo} description={postData.description}/>
                 <PostTags tagsId={postData.tagsId} tagVariant='project' />
             </div>
             <div ref={containerRef} className={`postContentSection postContentSection-project ${tabletScreen ? 'postContentSection-smallerScreen' : ''}`}>
