@@ -4,10 +4,8 @@
             {
                 "id": "presentation",
                 "postTextParagraphs": [
-                    "Full-Stack developer experienced in creating modern, robust, scalable and responsive websites and web applications, with an emphasis on user-experience.",
-                    "I also have a solid background with linux server administration.",
-                    "I love to learn new technologies, and enhance my skills.",
-                    "Here is an overview of my skills, that I update frequently:"
+                    "Full-Stack developer experienced in creating modern websites and web applications, with an emphasis on user-experience.",
+                    "I also have a solid background with linux server administration."
                 ],
                 "tagsId":[
                     "tag_ts",
@@ -304,10 +302,8 @@
             {
                 "id": "presentation",
                 "postTextParagraphs": [
-                    "Développeur Full-Stack Typescript React/Next, ayant de l'experience dans la création de web application, avec un accent sur l'expérience utilisateur",
-                    "Je travaille aussi sur différents projets avec Python.",
-                    "Ayant initialement un parcours en administration serveur, j'ai une solide expérience avec Linux.",
-                    "J'aime apprendre de nouvelles technologies et améliorer mes compétences."
+                    "Développeur Full-Stack ayant de l'experience dans la création d'application web, avec un accent sur l'expérience utilisateur",
+                    "Ayant un parcours réseau / administration serveur, j'ai aussi un solide background avec Linux."
                 ],
                 "tagsId":[
                     "tag_ts",
