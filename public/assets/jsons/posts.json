@@ -96,14 +96,14 @@
                 "id": "tetron77",
                 "projectOrigin": "Personal project",
                 "title": "Tetron77",
-                "description": "Shooter and exploration game with a heavy atmosphere",
+                "description": "Shooter and exploration game with a focus on atmosphere",
                 "tagsId": ["tag_ts", "tag_threeJs", "tag_rapier", "tag_webgl", "tag_abletonLive", "tag_browserGame", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "A little shooter and exploration game with a heavy atmosphere",
-                    "Use hybrid-procedural generation to generate the world.",
-                    "The world layout is handcrafted from an image file, and then the procedural generation make it real",
-                    "Ambient music composed by myself.",
-                    "Made for the Cursor Vibe Jam 2026, organised by @levelsio"
+                    "Shooter and exploration game with a heavy atmosphere.",
+                    "Hybrid-procedural generation to generate the world.",
+                    "World elements are placed by hand from an image file, then procedural generation does the rest.",
+                    "Ambient music composed by myself on Ableton.",
+                    "Made for the Cursor Vibe Jam 2026, organised by @levelsio on X"
                 ],
                 "postTextKeyPoints": {
                     "text": "Key features : ",
@@ -392,14 +392,14 @@
                 "id": "tetron77",
                 "projectOrigin": "Projet personnel",
                 "title": "Tetron77",
-                "description": "Jeu de tir et d'exploration à l'ambiance lourde",
+                "description": "Jeu de tir et d'exploration avec un focus sur l'ambiance",
                 "tagsId": ["tag_ts", "tag_threeJs", "tag_rapier", "tag_webgl", "tag_abletonLive", "tag_browserGame", "tag_githubPages"],
                 "postTextParagraphs": [
-                    "Un petit jeu de tir et d'exploration avec une atmosphère pesante.",
-                    "Utilise de la generation procédurale hybride pour générer le monde.",
-                    "Les éléments du monde sont placés à la main depuis un fichier image, puis la génération procédurale fait le reste.",
-                    "Musique d'ambiance composée par moi-même.",
-                    "Fait pour la Cursor Vibe Jam 2026, organisée par @levelsio"
+                    "Jeu de tir et d'exploration avec une atmosphère pesante.",
+                    "Generation procédurale hybride pour générer le monde.",
+                    "Placement des éléments du monde à la main depuis un fichier image, puis génération procédurale pour le reste.",
+                    "Musique d'ambiance composée par mes soins sur Ableton.",
+                    "Projet fait pour la Cursor Vibe Jam 2026, organisée par @levelsio sur X"
                 ],
                 "postTextKeyPoints": {
                     "text": "Caractéristiques : ",
