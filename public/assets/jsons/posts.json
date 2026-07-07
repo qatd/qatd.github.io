@@ -115,7 +115,7 @@
                 },
                 "postsLinks": [
                     {"linkName": "Github repo", "link": "https://github.com/qatd/tetron77"},
-                    {"linkName": "Play online", "link": "https://qatd.github.io/tetron77/"}
+                    {"linkName": "Online version", "link": "https://qatd.github.io/tetron77/"}
                 ],
                 "medias": {
                     "videos": [
@@ -411,7 +411,7 @@
                 },
                 "postsLinks": [
                     {"linkName": "Repo Github", "link": "https://github.com/qatd/tetron77"},
-                    {"linkName": "Jouer en ligne", "link": "https://qatd.github.io/tetron77/"}
+                    {"linkName": "Version en ligne", "link": "https://qatd.github.io/tetron77/"}
                 ],
                 "medias": {
                     "videos": [
