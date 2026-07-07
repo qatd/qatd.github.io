@@ -128,28 +128,6 @@
                 }
             },
             {
-                "id": "portfolio_project",
-                "projectOrigin": "Professional project",
-                "title": "Portfolio Website / Reusable website structure",
-                "description": "This current website.",
-                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
-                "postTextParagraphs": [
-                    "A simple portfolio webiste.",
-                    "Deployment on github pages, populated with a json"
-                ],
-                "postTextKeyPoints":{
-                    "text":"Key features : ",
-                    "points":[
-                        {"id":1,"text":"Reusable structure"},
-                        {"id":2,"text":"Fed with a JSON file for both text and app's structure"},
-                        {"id":4,"text":"Use of Fallback, ErrorBoundaries, react-router and framer-motion"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Github repo","link": "https://github.com/qatd/qatd.github.io"}
-                ]
-            },
-            {
                 "id": "temporo",
                 "projectOrigin": "Personal project",
                 "title": "Temporo",
@@ -207,6 +185,28 @@
                     {"linkName": "Privacy Policy","link": "temporo_privacy_policy.html"},
                     {"linkName": "Terms of Service","link": "temporo_terms_of_service.html"},
                     {"linkName": "App Store link","link": "https://apps.apple.com/fr/app/temporo/id6743496336"}
+                ]
+            },
+            {
+                "id": "portfolio_project",
+                "projectOrigin": "Professional project",
+                "title": "Portfolio Website / Reusable website structure",
+                "description": "This current website.",
+                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
+                "postTextParagraphs": [
+                    "A simple portfolio webiste.",
+                    "Deployment on github pages, populated with a json"
+                ],
+                "postTextKeyPoints":{
+                    "text":"Key features : ",
+                    "points":[
+                        {"id":1,"text":"Reusable structure"},
+                        {"id":2,"text":"Fed with a JSON file for both text and app's structure"},
+                        {"id":4,"text":"Use of Fallback, ErrorBoundaries, react-router and framer-motion"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Github repo","link": "https://github.com/qatd/qatd.github.io"}
                 ]
             },
             {
@@ -424,28 +424,6 @@
                 }
             },
             {
-                "id": "portfolio_project",
-                "projectOrigin": "Projet professionnel",
-                "title": "Site Portfolio / Structure de site web réutilisable",
-                "description": "(Ce site web)",
-                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
-                "postTextParagraphs": [
-                    "Site portfolio.",
-                    "Déployé sur Github Pages, alimenté par un fichier json"
-                ],
-                "postTextKeyPoints":{
-                    "text":"Fonctions clés : ",
-                    "points":[
-                        {"id":1,"text":"Structure réutilisable"},
-                        {"id":2,"text":"Alimenté par un fichier JSON pour le texte et la structure de l'app"},
-                        {"id":4,"text":"Utilisation de Fallback, ErrorBoundaries, react-router et framer-motion"}
-                    ]
-                },
-                "postsLinks": [
-                    {"linkName": "Repo Github","link": "https://github.com/qatd/qatd.github.io"}
-                ]
-            },
-            {
                 "id": "temporo",
                 "projectOrigin": "Projet personnel",
                 "title": "Temporo",
@@ -503,6 +481,28 @@
                     {"linkName": "Politique de confidentialité","link": "temporo_privacy_policy.html"},
                     {"linkName": "Conditions d'utilisation","link": "temporo_terms_of_service.html"},
                     {"linkName": "Lien App Store","link": "https://apps.apple.com/fr/app/temporo/id6743496336"}
+                ]
+            },
+            {
+                "id": "portfolio_project",
+                "projectOrigin": "Projet professionnel",
+                "title": "Site Portfolio / Structure de site web réutilisable",
+                "description": "(Ce site web)",
+                "tagsId": ["tag_ts", "tag_react", "tag_vite", "tag_suspense", "tag_errorBoundaries", "tag_githubPages", "tag_framerMotion", "tag_reactResponsive", "tag_reactRouter", "tag_scss", "tag_styledComponents","tag_reactContext"],
+                "postTextParagraphs": [
+                    "Site portfolio.",
+                    "Déployé sur Github Pages, alimenté par un fichier json"
+                ],
+                "postTextKeyPoints":{
+                    "text":"Fonctions clés : ",
+                    "points":[
+                        {"id":1,"text":"Structure réutilisable"},
+                        {"id":2,"text":"Alimenté par un fichier JSON pour le texte et la structure de l'app"},
+                        {"id":4,"text":"Utilisation de Fallback, ErrorBoundaries, react-router et framer-motion"}
+                    ]
+                },
+                "postsLinks": [
+                    {"linkName": "Repo Github","link": "https://github.com/qatd/qatd.github.io"}
                 ]
             },
             {
